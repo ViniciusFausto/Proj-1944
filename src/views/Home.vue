@@ -1,13 +1,24 @@
 <template>
-  <HelloWorld />
+<div>
+  <Carousel/>
+  <Cards/>
+  <BannerLoja/>
+</div>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld';
+import Carousel from '../components/Carousel.vue';
+import Cards from '../components/Cards.vue';
+import BannerLoja from '../components/BannerLoja.vue'
 
 export default {
-  components: {
-    HelloWorld,
+      components: {
+    Carousel,Cards,BannerLoja,
   },
-};
+}
 </script>
+
+
+<style>
+
+</style>
