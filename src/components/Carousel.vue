@@ -4,6 +4,7 @@
       v-for="(item,i) in items"
       :key="i"
       :src="item.src"
+      :href="item.href"
       reverse-transition="fade-transition"
       transition="fade-transition"
     ></v-carousel-item>
@@ -16,13 +17,14 @@
       return {
         items: [
           {
-            src: require('../assets/img/slide1.jpeg')
+            src: require('../assets/IMG CARROSSEL/nave3.jpg'),
+            href:'www.google.com'
           },
           {
-            src: require('../assets/img/slide2.png')
+            src: require('../assets/IMG CARROSSEL/dunkirk.jpg')
           },
           {
-            src: require('../assets/img/slide3.jpg')
+            src: require('../assets/IMG CARROSSEL/antes.jpg')
           },
           {
             src: require('../assets/img/slide4.jpg')

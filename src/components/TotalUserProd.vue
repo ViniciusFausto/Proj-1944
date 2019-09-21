@@ -24,15 +24,6 @@
                   v-text="card.title"
                 ></v-card-title>
               </v-img>
-  
-              <v-card-actions>
-      <v-btn
-        text
-        color="green"
-      >
-        Conhecer
-      </v-btn>
-      </v-card-actions>
             </v-card>
           </v-col>
         </v-row>
@@ -45,11 +36,8 @@
 export default {
     data: () => ({
     cards: [
-      { title: 'Filmes', src: require('../assets/CARDS MENORES/menino.jpg'), flex: 4 },
-      { title: 'A Era de Hiter', src: require('../assets/CARDS MENORES/governo2.jpg'), flex: 4 },
-      { title: 'A Cobra vai fumar', src: require('../assets/CARDS MENORES/brasil.jpg'), flex: 4 },
-      { title: 'Curiosidades', src: require('../assets/CARDS MAIORES/guerraCURIOSIDADES.jpg'), flex: 6 },
-      { title: 'Governo', src: require('../assets/CARDS MAIORES/governo3.jpg'), flex: 6 },
+      { title: 'Total De Produtos: 6', src: require('../assets/img/curiosidades.jpg'), flex: 6 },
+      { title: 'Total De Usuários: 6', src: require('../assets/img/governo.jpg'), flex: 6 },
     ],
   }),
 }

@@ -21,25 +21,14 @@
         >
           <v-list-item-group
             v-model="group"
-            active-class="amber accent-2 text--accent-4 white--text"
+            active-class="deep-purple--text text--accent-4"
           >
             <v-list-item>
-              <v-list-item-title>História</v-list-item-title>
+              <v-list-item-title>Usuários</v-list-item-title>
             </v-list-item>
  
             <v-list-item>
-              <v-list-item-title>Catálogos</v-list-item-title>
-            </v-list-item>
- 
-            <v-list-item>
-              <v-list-item-title>Loja</v-list-item-title>
-            </v-list-item>
- 
-            <v-list-item>
-              <v-list-item-title>Sobre</v-list-item-title>
-            </v-list-item>
-             <v-list-item>
-              <v-list-item-title @click="navegarAreaAdm">Área Administrativa</v-list-item-title>
+              <v-list-item-title>Produtos</v-list-item-title>
             </v-list-item>
           </v-list-item-group>
         </v-list>
@@ -49,7 +38,6 @@
 </template> 
 
 <script>
-
 export default {
   data: () => ({
     drawer: false,

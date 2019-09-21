@@ -1,5 +1,6 @@
 <template>
 <div>
+  <Menu/>
   <Carousel/>
   <Cards/>
   <BannerLoja/>
@@ -10,10 +11,11 @@
 import Carousel from '../components/Carousel.vue';
 import Cards from '../components/Cards.vue';
 import BannerLoja from '../components/BannerLoja.vue'
+import Menu from '../components/Menu.vue';
 
 export default {
       components: {
-    Carousel,Cards,BannerLoja,
+   Menu,Carousel,Cards,BannerLoja,
   },
 }
 </script>

@@ -1,7 +1,6 @@
 <template>
 <v-app>
     <v-content>
-      <Menu/>
       <div id="app">
         <router-view />
       </div>
@@ -11,14 +10,14 @@
 </template>
 
 <script>
-import Menu from './components/Menu';
+
 import Footer from './components/Footer';
 
 
 export default {
   name: 'App',
   components: {
-    Menu,Footer,
+    Footer,
   },
   data: () => ({
     //
