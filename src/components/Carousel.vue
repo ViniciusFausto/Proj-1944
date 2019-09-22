@@ -21,13 +21,16 @@
             href:'www.google.com'
           },
           {
-            src: require('../assets/IMG CARROSSEL/dunkirk.jpg')
+            src: require('../assets/IMG CARROSSEL/dunkirk.jpg'),
+            href:'www.google.com'
           },
           {
-            src: require('../assets/IMG CARROSSEL/antes.jpg')
+            src: require('../assets/IMG CARROSSEL/antes.jpg'),
+            href:'www.google.com'
           },
           {
-            src: require('../assets/img/slide4.jpg')
+            src: require('../assets/img/slide4.jpg'),
+            href:'www.google.com'
           },
         ],
       }
