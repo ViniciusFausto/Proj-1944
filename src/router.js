@@ -22,6 +22,11 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
+      path: '/historia',
+      name: 'historia',
+      component: () => import('./views/Historia.vue')
+    },
+    {
       path:'/AreaAdm/Login',
       name:'painel-login',
       component: () => import('./views/AreaAdm/Login.vue')
@@ -40,6 +45,12 @@ export default new Router({
       path:'/AreaAdm/UsuarioAdm',
       name:'painel-usuario',
       component: () => import('./views/AreaAdm/UsuarioAdm.vue')
+    },
+    {
+      path:'/Curiosidades',
+      name:'Curiosidades',
+      component: () => import('./views/Curiosidades.vue')
     }
+    
   ]
 })

@@ -18,7 +18,7 @@
         items: [
           {
             src: require('../assets/IMG CARROSSEL/nave3.jpg'),
-            href:'www.google.com'
+            href:'/Historia'
           },
           {
             src: require('../assets/IMG CARROSSEL/dunkirk.jpg'),

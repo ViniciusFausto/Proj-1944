@@ -1,6 +1,6 @@
 <template >
   <v-container class="menu">
-        <div id="icon"><v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon></div>
+          <div><img src="../assets/menu.svg" alt="" class="icon" @click.stop="drawer = !drawer"> </div>
          <div id="titulo">
            <img src="../assets/img/titulo.png" alt="" srcset="">
          </div>
@@ -24,12 +24,19 @@
             active-class="deep-purple--text text--accent-4"
           >
             <v-list-item>
+              <v-list-item-title @click="navegarHome">Página Inicial</v-list-item-title>
+            </v-list-item>
+            <router-link to="/AreaAdm/UsuarioAdm">
+            <v-list-item>
               <v-list-item-title>Usuários</v-list-item-title>
             </v-list-item>
- 
+            </router-link>
+
+            <router-link to="/AreaAdm/ProdutoAdm">
             <v-list-item>
               <v-list-item-title>Produtos</v-list-item-title>
             </v-list-item>
+            </router-link>
           </v-list-item-group>
         </v-list>
       </v-navigation-drawer>
@@ -50,8 +57,8 @@ export default {
     },
   },
   methods: {
-    navegarAreaAdm(){
-      this.$router.push('/AreaAdm/Login')
+    navegarHome(){
+      this.$router.push('/')
     }
   },
 }
@@ -72,8 +79,8 @@ export default {
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace
 }
-#icon{
-  width: 100px;
+.icon{
+  width: 50px;
 }
 #logo{
   width: 70px;

@@ -1,6 +1,6 @@
 <template >
   <v-container class="menu">
-        <div id="icon"><v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon></div>
+        <div><img src="../assets/menu.svg" alt="" class="icon" @click.stop="drawer = !drawer"> </div>
          <div id="titulo">
            <img src="../assets/img/titulo.png" alt="" srcset="">
          </div>
@@ -23,10 +23,16 @@
             v-model="group"
             active-class="amber accent-2 text--accent-4 white--text"
           >
+             <router-link to="/historia">
             <v-list-item>
-              <v-list-item-title>História</v-list-item-title>
+              <v-list-item-title class="tituloMenu">História</v-list-item-title>
             </v-list-item>
- 
+            </router-link>
+            <router-link to="/Curiosidades">
+            <v-list-item>
+              <v-list-item-title class="tituloMenu">Curiosidades</v-list-item-title>
+            </v-list-item>
+            </router-link>
             <v-list-item>
               <v-list-item-title>Catálogos</v-list-item-title>
             </v-list-item>
@@ -78,16 +84,20 @@ export default {
   align-content: flex-end;
   height: 90px;
 }
-#titulo{
+/* #titulo{
     align-content: center;
     margin-bottom: 10px;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace
-}
-#icon{
-  width: 100px;
+} */
+#titulo img{
+  width: 200px;
 }
 #logo{
   width: 70px;
 }
+.icon{
+  width: 50px;
+}
+a {  text-decoration: none;}
 </style>
