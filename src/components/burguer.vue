@@ -1,19 +1,22 @@
 <template >
-  <v-container class="menu">
+  <v-container 
+  style="max-width: 100%"
+  class="menu amber">
         <div><img src="../assets/menu.svg" alt="" class="icon" @click.stop="drawer = !drawer"> </div>
          <div id="titulo">
            <img src="../assets/img/titulo.png" alt="" srcset="">
          </div>
          <router-link to="/">
          <div class="logo">
-           <img src="../assets/img/Icone44.png" id="logo" alt="">
+           <img src="../assets/img/Icone44.png" id="logo" alt="titulo">
          </div>
          </router-link>
       <v-navigation-drawer
         v-model="drawer"
         absolute
-        bottom
         temporary
+        height="auto"
+        class="amber accent-5"
       >
         <v-list
           nav
@@ -23,6 +26,16 @@
             v-model="group"
             active-class="amber accent-2 text--accent-4 white--text"
           >
+            <v-list-item>
+              <v-list-item-action>
+                <img src="../assets/menu.svg" alt="" width="30" @click.stop="drawer = !drawer">
+              </v-list-item-action>
+            </v-list-item>
+              <router-link to="/">
+            <v-list-item>
+              <v-list-item-title class="tituloMenu">Página Inicial</v-list-item-title>
+            </v-list-item>
+            </router-link>
              <router-link to="/historia">
             <v-list-item>
               <v-list-item-title class="tituloMenu">História</v-list-item-title>
@@ -40,10 +53,11 @@
             <v-list-item>
               <v-list-item-title>Loja</v-list-item-title>
             </v-list-item>
- 
+            <router-link to="/about">
             <v-list-item>
               <v-list-item-title>Sobre</v-list-item-title>
             </v-list-item>
+            </router-link>
              <v-list-item>
               <v-list-item-title @click="navegarAreaAdm">Área Administrativa</v-list-item-title>
             </v-list-item>

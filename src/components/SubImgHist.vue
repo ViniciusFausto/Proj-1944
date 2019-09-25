@@ -25,15 +25,11 @@
                 ></v-card-title>
               </v-img>
   
-              <v-card-actions>
-              <v-btn
-                text
-                color="green"
-                :href="card.href"
-              >
-                Conhecer
-              </v-btn>
-              </v-card-actions>
+              
+    <v-card-text
+      class="black--text"
+       v-text="card.texto" >
+    </v-card-text>
                     </v-card>
           </v-col>
         </v-row>
@@ -46,16 +42,10 @@
 export default {
     data: () => ({
     cards: [
-      { title: 'Filmes', src: require('../assets/CARDS MENORES/menino.jpg'), 
-      href:'www.google.com', flex: 4, },
-      { title: 'A Era de Hiter', src: require('../assets/CARDS MENORES/governo2.jpg'),
-      href:'www.google.com', flex: 4 },
-      { title: 'A Cobra vai fumar', src: require('../assets/CARDS MENORES/brasil.jpg'),
-      href:'www.google.com', flex: 4 },
-      { title: 'Curiosidades', src: require('../assets/CARDS MAIORES/guerraCURIOSIDADES.jpg'),
-      href:'/Curiosidades', flex: 6 },
-      { title: 'Governo', src: require('../assets/CARDS MAIORES/governo3.jpg'),
-      href:'www.google.com', flex: 6,  },
+      { title: 'Hitler', src: require('../assets/CARDS MAIORES/guerraCURIOSIDADES.jpg'), flex: 6,
+      texto:"texteeeeeeeee"},
+      { title: 'Guerraaa', src: require('../assets/CARDS MAIORES/governo3.jpg'), flex: 6,
+        texto:"texto card 2"  },
     ],
   }),
 }

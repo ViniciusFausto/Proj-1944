@@ -1,15 +1,40 @@
 <template>
-    <div class="d-inline-flex caixa mt-12 mx-10 "
-    background-color="light-blue">
-        <div class="mx-3 my-3">
-            <img src="../assets/img/slide1.jpg" alt="">
-        </div>
-        <div class="ml-5 text-center texto">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi vitae veniam, sunt quo exercitationem maiores ipsam? Architecto molestias quia est. Odit accusamus minima nesciunt. Repellendus mollitia magni facilis obcaecati asperiores.
-        </div>
-    </div>
-</template>
+  <v-card
+    class="mx-auto mt-5"
+    max-width="700"
+  >
+    <v-img
+      class="white--text"
+      height="400px"
+      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+    >
+      <v-card-title class="align-end fill-height">Top 10 Australian beaches</v-card-title>
+    </v-img>
 
+    <v-card-text>
+      <span>Number 10</span><br>
+      <span class="text--primary">
+        <span>Whitehaven Beach</span><br>
+        <span>Whitsunday Island, Whitsunday Islands</span>
+      </span>
+    </v-card-text>
+
+    <v-card-actions>
+      <v-btn
+        text
+        color="orange"
+      >
+        Share
+      </v-btn>
+      <v-btn
+        text
+        color="orange"
+      >
+        Explore
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+</template>
 <script>
 export default {
 
@@ -17,21 +42,5 @@ export default {
 </script>
 
 <style>
-img{
-    width: 500px;
-}
-.caixa{
-    background-color: rgb(185, 177, 177);
-    align-items: center;
-}
-@media (max-width: 700px) {
-.caixa{
-    flex-wrap: wrap;
 
-}
-img{
-    width: 350px;
-    text-align: center;
-}
-}
 </style>

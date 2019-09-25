@@ -12,8 +12,9 @@
       <v-navigation-drawer
         v-model="drawer"
         absolute
-        bottom
+        
         temporary
+        height="auto"
       >
         <v-list
           nav
@@ -23,6 +24,11 @@
             v-model="group"
             active-class="deep-purple--text text--accent-4"
           >
+            <v-list-item>
+              <v-list-item-action>
+                <img src="../assets/menu.svg" alt="" width="30" @click.stop="drawer = !drawer">
+              </v-list-item-action>
+            </v-list-item>
             <v-list-item>
               <v-list-item-title @click="navegarHome">Página Inicial</v-list-item-title>
             </v-list-item>
@@ -73,11 +79,14 @@ export default {
   align-content: flex-end;
   height: 90px;
 }
-#titulo{
+/* #titulo{
     align-content: center;
     margin-bottom: 10px;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace
+} */
+#titulo img{
+  width: 200px;
 }
 .icon{
   width: 50px;
