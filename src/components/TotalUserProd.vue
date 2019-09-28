@@ -28,7 +28,7 @@
               <v-card-actions>
               <v-btn
                 text
-                color="primary"
+                color="grey darken-3"
                 :href="card.href"
               >
                 Gerenciar
@@ -46,10 +46,8 @@
 export default {
     data: () => ({
     cards: [
-      { title: 'Usuários', src: require('../assets/CARDS MAIORES/guerraCURIOSIDADES.jpg'),
-      href:'/AreaAdm/UsuarioAdm', flex: 6 },
-      { title: 'Produtos', src: require('../assets/CARDS MAIORES/governo3.jpg'),
-      href:'/AreaAdm/ProdutoAdm', flex: 6 },
+      { title: 'Usuários', src: require('../assets/CARDS MAIORES/governo3.jpg'),
+      href:'/AreaAdm/UsuarioAdm', flex: 12 },
     ],
   }),
 }

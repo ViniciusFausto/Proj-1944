@@ -1,8 +1,10 @@
 <template >
-  <v-container class="menu">
-          <div><img src="../assets/menu.svg" alt="" class="icon" @click.stop="drawer = !drawer"> </div>
+  <v-container 
+  class="menu grey darken-4"
+   style="max-width: 100%;">
+          <div><img src="../assets/Menu.svg" alt="" class="icon" @click.stop="drawer = !drawer"> </div>
          <div id="titulo">
-           <img src="../assets/img/titulo.png" alt="" srcset="">
+           <img src="../assets/img/logosite.svg" alt="" srcset="">
          </div>
          <router-link to="/">
          <div class="logo">
@@ -12,26 +14,43 @@
       <v-navigation-drawer
         v-model="drawer"
         absolute
-        
+        height="100%"
         temporary
-        height="auto"
-      >
+    
+      >  <v-list-item>
+              <v-list-item-action>
+                <img src="../assets/MenuDentro.svg" alt="" width="30" @click.stop="drawer = !drawer">
+              </v-list-item-action>
+            </v-list-item>
+              <v-list>
+          <v-list-item>
+            <v-list-item-avatar>
+              <v-img src="https://randomuser.me/api/portraits/women/85.jpg"></v-img>
+            </v-list-item-avatar>
+          </v-list-item>
+
+          <v-list-item
+            link
+            two-line
+          >
+            <v-list-item-content>
+              <v-list-item-title class="title">{{user.nome}}</v-list-item-title>
+              <v-list-item-subtitle><a :href="`mailto:${user.email}`">{{ user.email }}</a></v-list-item-subtitle>
+            </v-list-item-content>
+          
+          </v-list-item>
+        </v-list>
+      
+
+      <v-divider></v-divider>
         <v-list
           nav
           dense
         >
           <v-list-item-group
             v-model="group"
-            active-class="deep-purple--text text--accent-4"
+            active-class="white--text black"
           >
-            <v-list-item>
-              <v-list-item-action>
-                <img src="../assets/menu.svg" alt="" width="30" @click.stop="drawer = !drawer">
-              </v-list-item-action>
-            </v-list-item>
-            <v-list-item>
-              <v-list-item-title @click="navegarHome">Página Inicial</v-list-item-title>
-            </v-list-item>
             <router-link to="/AreaAdm/UsuarioAdm">
             <v-list-item>
               <v-list-item-title>Usuários</v-list-item-title>
@@ -45,6 +64,11 @@
             </router-link>
           </v-list-item-group>
         </v-list>
+              
+        <v-btn class="ml-2" icon @click="sair">
+          <v-icon>mdi-logout</v-icon>
+        </v-btn>
+      
       </v-navigation-drawer>
   </v-container>
 
@@ -52,6 +76,11 @@
 
 <script>
 export default {
+  computed:{
+    user(){
+      return this.$ls.get('user')
+    }
+  },
   data: () => ({
     drawer: false,
     group: null,
@@ -64,6 +93,10 @@ export default {
   },
   methods: {
     navegarHome(){
+      this.$router.push('/')
+    },
+    sair () {
+      this.$ls.remove('user')
       this.$router.push('/')
     }
   },
@@ -79,17 +112,11 @@ export default {
   align-content: flex-end;
   height: 90px;
 }
-/* #titulo{
-    align-content: center;
-    margin-bottom: 10px;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace
+/* #titulo img{
+  width: 100px;
 } */
-#titulo img{
-  width: 200px;
-}
 .icon{
-  width: 50px;
+  width: 35px;
 }
 #logo{
   width: 70px;

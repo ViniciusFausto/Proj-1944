@@ -1,43 +1,52 @@
 <template>
+<div>
+  
   <v-card
-    class="mx-auto mt-5"
-    max-width="700"
+    class="mx-auto"
+    max-width="100%"
+    style="border-radius:0px;"
   >
     <v-img
-      class="white--text"
-      height="400px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-    >
-      <v-card-title class="align-end fill-height">Top 10 Australian beaches</v-card-title>
-    </v-img>
+      src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+      height="300px"
+    ></v-img>
 
-    <v-card-text>
-      <span>Number 10</span><br>
-      <span class="text--primary">
-        <span>Whitehaven Beach</span><br>
-        <span>Whitsunday Island, Whitsunday Islands</span>
-      </span>
-    </v-card-text>
+    <v-card-title style="font-family:calibri" class="black white--text justify-center display-1">
+      <div>Curiosidades</div>
+    </v-card-title>
 
     <v-card-actions>
+      <div class="ml-2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, rerum necessitatibus nemo deleniti vel facere. Distinctio animi dolor, vero, atque est, culpa consequatur beatae dolore maiores debitis itaque magnam pariatur.
+      </div>
+
+      <div class="flex-grow-1"></div>
+
       <v-btn
-        text
-        color="orange"
-      >
-        Share
-      </v-btn>
-      <v-btn
-        text
-        color="orange"
-      >
-        Explore
+        icon
+        @click="show = !show"
+      > 
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+        
       </v-btn>
     </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-card-text>
+          I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+        </v-card-text>
+      </div>
+    </v-expand-transition>
   </v-card>
+  </div>
 </template>
 <script>
 export default {
-
+        data: () => ({
+      show: false,
+    }),
+  
 }
 </script>
 

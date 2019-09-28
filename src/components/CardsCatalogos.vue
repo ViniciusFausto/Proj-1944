@@ -20,15 +20,15 @@
                 gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               >
                 <v-card-title
-                  class="fill-height align-end "
+                  class="fill-height align-end"
                   v-text="card.title"
                 ></v-card-title>
               </v-img>
   
-              <v-card-actions class="black">
+              <v-card-actions>
               <v-btn
                 text
-                color="white"
+                color="green"
                 :href="card.href"
               >
                 Conhecer

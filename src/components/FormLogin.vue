@@ -16,7 +16,7 @@
           >
             <v-card class="elevation-12">
               <v-toolbar
-                color="primary"
+                color="grey darken-3"
                 dark
               >
                 <v-toolbar-title>Login</v-toolbar-title>
@@ -44,6 +44,8 @@
                     label="Login"
                     name="login"
                     type="text"
+                    v-model="login"
+                     @keypress.enter="navegarIndexAdm"
                   ></v-text-field>
 
                   <v-text-field
@@ -51,12 +53,15 @@
                     label="Password"
                     name="password"
                     type="password"
+                    v-model="password"
+                    @keypress.enter="navegarIndexAdm"
                   ></v-text-field>
+                    <v-alert transition="scale-transition" type="error" :value="!!alerta">{{ alerta}}</v-alert>
                 </v-form>
               </v-card-text>
               <v-card-actions>
                 <div class="flex-grow-1"></div>
-                <v-btn @click="navegarIndexAdm" color="primary">Entrar</v-btn>
+                <v-btn @click="navegarIndexAdm" color="grey darken-3 white--text">Entrar</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -71,17 +76,27 @@
     props: {
       source: String,
     },
-    data: () => ({
-      drawer: null,
-    }),
+    data(){
+      return{
+        login:'',
+        password:'',
+        alerta:''
+      }
+    },
     
   methods: {
     navegarIndexAdm(){
-      this.$router.push('/AreaAdm/Index')
+      if (this.login === 'master' && this.password === '123') {
+                this.$ls.set('user', {
+          login: this.login,
+          nome: 'Master',
+          email: 'master.gamer666@gmail.com'
+        })
+        this.$router.push('/AreaAdm/Index')
+      }else{
+        this.alerta = 'Usuário ou senha não correspondentes.'
+      }
     }
-  },
+  }
   }
 </script>
-<style scoped>
-
-</style>

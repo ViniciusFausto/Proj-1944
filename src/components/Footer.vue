@@ -1,15 +1,10 @@
 <template>
   
     <v-footer
-      absolute
-      class="font-weight-medium"
+      class="font-weight-medium black white--text text-center"
     >
-      <v-col
-        class="text-center"
-        cols="12"
-      >
-        {{ new Date().getFullYear() }} — <strong>Todos os direitos reservados</strong>
-      </v-col>
+        {{ new Date().getFullYear() }} — <strong >Todos os direitos reservados</strong>
+
     </v-footer>
   
 </template>

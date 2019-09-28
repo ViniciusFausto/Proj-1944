@@ -1,5 +1,5 @@
 <template>
-  <v-carousel height="300px">
+  <v-carousel height="386px" >
     <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
@@ -18,19 +18,19 @@
         items: [
           {
             src: require('../assets/IMG CARROSSEL/nave3.jpg'),
-            href:'/Historia'
+            href:'/Catalogos'
           },
           {
             src: require('../assets/IMG CARROSSEL/dunkirk.jpg'),
-            href:'www.google.com'
+            href:'/Curiosidades'
           },
           {
             src: require('../assets/IMG CARROSSEL/antes.jpg'),
-            href:'www.google.com'
+            href:'/Curiosidades'
           },
           {
             src: require('../assets/img/slide4.jpg'),
-            href:'www.google.com'
+            href:'/historia'
           },
         ],
       }
@@ -38,7 +38,4 @@
   }
 </script>
 <style>
-.banner{
-  height: 400px;
-}
 </style>

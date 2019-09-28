@@ -43,7 +43,7 @@ export default {
     data: () => ({
     cards: [
       { title: 'Hitler', src: require('../assets/CARDS MAIORES/guerraCURIOSIDADES.jpg'), flex: 6,
-      texto:"texteeeeeeeee"},
+      texto:"sahdklhkshkjahsdjkhjadkhadshjkhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"},
       { title: 'Guerraaa', src: require('../assets/CARDS MAIORES/governo3.jpg'), flex: 6,
         texto:"texto card 2"  },
     ],

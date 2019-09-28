@@ -1,26 +1,33 @@
 <template>
+<div>
+  
   <v-card
     class="mx-auto mt-5"
-    max-width="900"
+    max-width="1220"
+    style="border-radius:0px;"
   >
     <v-img
       src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-      height="200px"
+      height="300px"
     ></v-img>
 
-    <v-card-title>
-      <div>Top western road trips</div>
-      <span class="grey--text subtitle-1">1,000 miles of wonder</span>
+    <v-card-title style="font-family:calibri" class="black white--text justify-center display-1">
+      <div>História</div>
     </v-card-title>
 
     <v-card-actions>
+      <div class="ml-2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, rerum necessitatibus nemo deleniti vel facere. Distinctio animi dolor, vero, atque est, culpa consequatur beatae dolore maiores debitis itaque magnam pariatur.
+      </div>
+
       <div class="flex-grow-1"></div>
 
       <v-btn
         icon
         @click="show = !show"
-      >
+      > 
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+        
       </v-btn>
     </v-card-actions>
 
@@ -32,6 +39,7 @@
       </div>
     </v-expand-transition>
   </v-card>
+  </div>
 </template>
 <script>
 export default {

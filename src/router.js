@@ -50,7 +50,11 @@ export default new Router({
       path:'/Curiosidades',
       name:'Curiosidades',
       component: () => import('./views/Curiosidades.vue')
+    },
+    {
+      path:'/Catalogos',
+      name:'Catálogos',
+      component: () => import('./views/Catalogos.vue')
     }
-    
   ]
 })

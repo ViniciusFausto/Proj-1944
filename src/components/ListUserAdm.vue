@@ -195,7 +195,7 @@
 
       deleteItem (item) {
         const index = this.desserts.indexOf(item)
-        confirm('Deseja mesmo Deletar esse Produto?') && this.desserts.splice(index, 1)
+        confirm('Deseja mesmo Deletar esse Usuario?') && this.desserts.splice(index, 1)
       },
 
       close () {

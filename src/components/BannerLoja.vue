@@ -1,49 +1,58 @@
 <template>
-  <v-card
-    class="mx-auto"
-    max-width="1000"
-  >
-    <v-img
-      class="white--text"
-      height="200px"
-      src="../assets/img/slide3.jpg"
-    >
-      <v-card-title class="align-end fill-height display-1">Compre Produtos incriveis</v-card-title>
-    </v-img>
-
-    <v-card-text>
-      <span class="text--primary">
-        <span>Conheça nossa loja</span><br>
-        <span>Roupa, Acessórios, Catálogos</span>
-      </span>
-    </v-card-text>
-
-    <v-card-actions>
-      <v-btn
-        text
-        color="green"
+  <div id="app" >
+  <v-container id="inspire">
+    <v-container
+        class="pa-2 "
+        fluid
       >
-        Conhecer
-      </v-btn>
-    </v-card-actions>
-  </v-card>
+        <v-row>
+          <v-col  
+            v-for="card in cards"
+            :key="card.title"
+            cols="12"
+            :sm="card.flex"
+          >
+            <v-card>
+              <v-img
+                :src="card.src"
+                class="white--text"
+                height="200px"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              >
+                <v-card-title
+                  class="fill-height align-end"
+                  v-text="card.title"
+                ></v-card-title>
+              </v-img>
+  
+              <v-card-actions class="black">
+              <v-btn
+                text
+                color="white"
+                :href="card.href"
+              >
+                Conhecer
+              </v-btn>
+              </v-card-actions>
+                    </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+  </v-container>
+</div>
 </template>
 
 <script>
 export default {
-
+    data: () => ({
+    cards: [
+      { title: 'Filmes', src: require('../assets/CARDS MENORES/menino.jpg'), 
+      href:'/Catalogo', flex: 12, },
+    ],
+  }),
 }
 </script>
 
 <style>
-/* .main{
-    display: flex;
-    justify-content: center;
-}
-.banner{
-    
-    background-color: red;
-    width: 90%;
-    height: 40vh;
-} */
+
 </style>

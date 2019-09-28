@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="grey lighten-5" >
   <Menu/>
   <Carousel/>
   <Cards/>
@@ -10,7 +10,7 @@
 <script>
 import Carousel from '../components/Carousel.vue';
 import Cards from '../components/Cards.vue';
-import BannerLoja from '../components/BannerLoja.vue'
+import BannerLoja from '../components/BannerLoja.vue';
 import Menu from '../components/Menu.vue';
 
 export default {
@@ -22,5 +22,4 @@ export default {
 
 
 <style>
-
 </style>
