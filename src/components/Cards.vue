@@ -52,7 +52,7 @@ export default {
       href:'www.google.com', flex: 4 },
       { title: 'A Cobra vai fumar', src: require('../assets/CARDS MENORES/brasil.jpg'),
       href:'www.google.com', flex: 4 },
-      { title: 'Curiosidades', src: require('../assets/CARDS MAIORES/guerraCURIOSIDADES.jpg'),
+      { title: 'Curiosidades', src: require('../assets/CARDS MAIORES/ovin.png'),
       href:'/Curiosidades', flex: 6 },
       { title: 'Governo', src: require('../assets/CARDS MAIORES/governo3.jpg'),
       href:'www.google.com', flex: 6,  },

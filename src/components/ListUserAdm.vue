@@ -2,7 +2,7 @@
   <v-data-table
     :headers="headers"
     :items="desserts"
-    sort-by="idade"
+    sort-by="telefone"
     class="elevation-1"
   >
     <template v-slot:top>
@@ -14,44 +14,11 @@
           vertical
         ></v-divider>
         <div class="flex-grow-1"></div>
-        <v-dialog v-model="dialog" max-width="500px">
-          <template v-slot:activator="{ on }">
-            <v-btn color="primary" dark class="mb-2" v-on="on">Novo Usuário</v-btn>
+          <template>
+            <router-link to="/AreaAdm/Formulario">
+            <v-btn color="primary" dark class="mb-2" >Novo Usuário</v-btn>
+            </router-link>
           </template>
-          <v-card>
-            <v-card-title>
-              <span class="headline">{{ formTitle }}</span>
-            </v-card-title>
-
-            <v-card-text>
-              <v-container>
-                <v-row>
-                  <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.nome" label="Nome"></v-text-field>
-                  </v-col>
-                  <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.idade" label="Idade"></v-text-field>
-                  </v-col>
-                  <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.tamanho" label="Tamanho Roupa"></v-text-field>
-                  </v-col>
-                  <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.cpf" label="CPF"></v-text-field>
-                  </v-col>
-                  <v-col cols="12" sm="6" md="4">
-                    <v-text-field v-model="editedItem.data" label="Data de Nascimento"></v-text-field>
-                  </v-col>
-                </v-row>
-              </v-container>
-            </v-card-text>
-
-            <v-card-actions>
-              <div class="flex-grow-1"></div>
-              <v-btn color="blue darken-1" text @click="close">Cancelar</v-btn>
-              <v-btn color="blue darken-1" text @click="save">Salvar</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
       </v-toolbar>
     </template>
     <template v-slot:item.action="{ item }">
@@ -85,27 +52,27 @@
           sortable: false,
           value: 'nome',
         },
-        { text: 'Idade', value: 'idade' },
-        { text: 'Tamanho Roupa', value: 'tamanho' },
-        { text: 'CPF', value: 'cpf' },
-        { text: 'Data Nascimento', value: 'data' },
+        { text: 'Telefone', value: 'telefone' },
+        { text: 'Email', value: 'email' },
+        { text: 'Cidade', value: 'cidade' },
+        { text: 'Estado', value: 'estado' },
         { text: 'Ações', value: 'action', sortable: false },
       ],
       desserts: [],
       editedIndex: -1,
       editedItem: {
         nome: '',
-        idade: '0',
-        tamanho: '',
-        cpf: '',
-        data: '',
+        telefone: '0',
+        email: '',
+        cidade: '',
+        estado: '',
       },
       defaultItem: {
         nome: '',
-        idade: '0,00',
-        tamanho: '',
-        cpf: '',
-        data: '',
+        telefone: '0,00',
+        email: '',
+        cidade: '',
+        estado: '',
       },
     }),
 
@@ -130,59 +97,59 @@
         this.desserts = [
           {
             nome: 'Daphne',
-            idade: '26',
-            tamanho: 'G',
-            cpf: '000.000.000-00',
-            data: '17/10/1992',
+            telefone: '997065280',
+            email: 'vinicius@gmail.com',
+            cidade: 'Araraquara',
+            estado: 'São Paulo',
           },
           {
             nome: 'Daphne',
-            idade: '26',
-            tamanho: 'G',
-            cpf: '000.000.000-00',
-            data: '17/10/1992',
+            telefone: '997065280',
+            email: 'vinicius@gmail.com',
+            cidade: 'Araraquara',
+            estado: 'São Paulo',
           },
           {
             nome: 'Daphne',
-            idade: '26',
-            tamanho: 'G',
-            cpf: '000.000.000-00',
-            data: '17/10/1992',
+            telefone: '997065280',
+            email: 'vinicius@gmail.com',
+            cidade: 'Araraquara',
+            estado: 'São Paulo',
           },
           {
             nome: 'Daphne',
-            idade: '26',
-            tamanho: 'G',
-            cpf: '000.000.000-00',
-            data: '17/10/1992',
+            telefone: '997065280',
+            email: 'vinicius@gmail.com',
+            cidade: 'Araraquara',
+            estado: 'São Paulo',
           },
           {
             nome: 'Daphne',
-            idade: '26',
-            tamanho: 'G',
-            cpf: '000.000.000-00',
-            data: '17/10/1992',
+            telefone: '997065280',
+            email: 'vinicius@gmail.com',
+            cidade: 'Araraquara',
+            estado: 'São Paulo',
           },
           {
             nome: 'Daphne',
-            idade: '26',
-            tamanho: 'G',
-            cpf: '000.000.000-00',
-            data: '17/10/1992',
+            telefone: '997065280',
+            email: 'vinicius@gmail.com',
+            cidade: 'Araraquara',
+            estado: 'São Paulo',
           },
           {
             nome: 'Daphne',
-            idade: '26',
-            tamanho: 'G',
-            cpf: '000.000.000-00',
-            data: '17/10/1992',
+            telefone: '997065280',
+            email: 'vinicius@gmail.com',
+            cidade: 'Araraquara',
+            estado: 'São Paulo',
           },
           {
             nome: 'Daphne',
-            idade: '26',
-            tamanho: 'G',
-            cpf: '000.000.000-00',
-            data: '17/10/1992',
+            telefone: '997065280',
+            email: 'vinicius@gmail.com',
+            cidade: 'Araraquara',
+            estado: 'São Paulo',
           },
         ]
       },

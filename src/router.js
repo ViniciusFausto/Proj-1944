@@ -42,6 +42,11 @@ export default new Router({
       component: () => import('./views/AreaAdm/ProdutoAdm.vue')
     },
     {
+      path:'/AreaAdm/Formulario',
+      name:'painel-formulario',
+      component: () => import('./views/AreaAdm/Formulario.vue')
+    },
+    {
       path:'/AreaAdm/UsuarioAdm',
       name:'painel-usuario',
       component: () => import('./views/AreaAdm/UsuarioAdm.vue')
