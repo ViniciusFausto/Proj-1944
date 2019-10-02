@@ -2,7 +2,7 @@
   <v-container  
   style="max-width: 100% "
   class="menu black align-center">
-        <div><img src="../assets/Menu.svg" alt="" class="icon" @click.stop="drawer = !drawer"> </div>
+        <div><img src="../assets/Menu.svg" alt="" width="100" @click.stop="drawer = !drawer"> </div>
          <div id="titulo">
            <img src="../assets/img/logosite.svg" alt="" srcset="">
          </div>
@@ -27,7 +27,7 @@
           >
             <v-list-item>
               <v-list-item-action>
-                <img src="../assets/MenuDentro.svg" alt="" width="30" @click.stop="drawer = !drawer">
+                <img src="../assets/MenuDentro.svg" alt="" width="100" @click.stop="drawer = !drawer">
               </v-list-item-action>
             </v-list-item>
               <router-link to="/">
@@ -106,9 +106,6 @@ export default {
 }
 #logo{
   width: 70px;
-}
-.icon{
-  width: 35px;
 }
 a {  text-decoration: none;}
 </style>

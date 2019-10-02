@@ -25,10 +25,10 @@
                 ></v-card-title>
               </v-img>
   
-              <v-card-actions>
+              <v-card-actions class="grey darken-3">
               <v-btn
                 text
-                color="grey darken-3"
+                color="white"
                 :href="card.href"
               >
                 Gerenciar

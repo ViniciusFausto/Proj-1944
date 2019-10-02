@@ -1,5 +1,20 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <Menu/>
+    <main-sobre/>
   </div>
 </template>
+
+<script>
+import MainSobre from '../components/MainSobre.vue'
+import Menu from '../components/Menu.vue';
+export default {
+  components:{
+    MainSobre,Menu,
+  }
+}
+</script>
+
+<style>
+
+</style>
