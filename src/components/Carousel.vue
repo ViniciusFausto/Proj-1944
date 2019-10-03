@@ -29,7 +29,7 @@
             href:'/Curiosidades'
           },
           {
-            src: require('../assets/img/slide4.jpg'),
+            src: require('../assets/IMG CARROSSEL/slide4.png'),
             href:'/historia'
           },
         ],

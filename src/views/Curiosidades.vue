@@ -2,7 +2,6 @@
 <div>
   <Menu/>
   <img-text-curiosidades/>
-  <sub-img-curiosidades/>
   <banner1/>
 </div>
 </template>

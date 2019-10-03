@@ -1,7 +1,7 @@
 <template>
 <v-app>
     <v-content>
-      <div id="juninho">
+      <div id="app">
         <router-view />
       </div>
       <Footer/>

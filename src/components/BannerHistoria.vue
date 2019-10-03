@@ -7,7 +7,7 @@
     style="border-radius:0px;"
   >
     <v-img
-      src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+      src="../assets/IMG CARROSSEL/slide4.png"
       height="300px"
     ></v-img>
 

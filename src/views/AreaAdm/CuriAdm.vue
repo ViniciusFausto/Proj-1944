@@ -1,16 +1,16 @@
 <template>
 <div>
-<menu-adm/>
-<cards-adm/>
+  <menu-adm/>
+  <ListCuriAdm/>
 </div>
 </template>
 
 <script>
 import MenuAdm from '../../components/MenuAdm.vue'
-import CardsAdm from '../../components/CardsAdm.vue'
+import ListCuriAdm from '../../components/ListCuriAdm.vue'
 export default {
     components:{
-        MenuAdm,CardsAdm,
+        MenuAdm,ListCuriAdm,
     }
 }
 </script>

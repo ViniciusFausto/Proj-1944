@@ -1,115 +1,140 @@
-<template >
-  <v-container  
-  style="max-width: 100% "
-  class="menu black align-center">
-        <div><img src="../assets/Menu.svg" alt="" width="50" @click.stop="drawer = !drawer"> </div>
-         <div id="titulo">
+<template>
+  <div>
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  </head>
+  <body class="body">
+<header class="header">
+    <div class="titulo">
            <img src="../assets/img/logosite.svg" alt="" srcset="">
          </div>
-         <router-link to="/">
-         <div class="logo">
-           <img src="../assets/img/Icone44.png" id="logo" alt="titulo">
-         </div>
-         </router-link>
-      <v-navigation-drawer
-        v-model="drawer"
-        absolute
-        temporary
-        class="grey lighten-5"
-      >
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
 
-        <v-list-item>
-          <v-list-item-action>
-            <img src="../assets/MenuDentro.svg" alt="" width="50" @click.stop="drawer = !drawer">
-          </v-list-item-action>
-        </v-list-item>
+    <ul class="menu">
+      <router-link to="/">Inicio</router-link>
+      <router-link to="/historia">História</router-link>
+      <router-link to="/Curiosidades">Curiosidades</router-link>
+      <router-link to="/about">Sobre</router-link>
+      <router-link to="/catalogos">Catálogos</router-link>
+      <router-link to="/AreaAdm/Login">Área Administrativa</router-link>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+</header>
+   
 
-        <v-divider></v-divider>
-        <v-list
-          nav
-          dense
-        >
-          <v-list-item-group
-            v-model="group"
-            active-class="black  white--text"
-          >
- 
-              <router-link to="/">
-            <v-list-item>
-              <v-list-item-title class="tituloMenu">Página Inicial</v-list-item-title>
-            </v-list-item>
-            </router-link>
-             <router-link to="/historia">
-            <v-list-item>
-              <v-list-item-title class="tituloMenu">História</v-list-item-title>
-            </v-list-item>
-            </router-link>
-            <router-link to="/Curiosidades">
-            <v-list-item>
-              <v-list-item-title class="tituloMenu">Curiosidades</v-list-item-title>
-            </v-list-item>
-            </router-link>
-            <router-link to="/Catalogos">
-            <v-list-item>
-              <v-list-item-title>Catálogos</v-list-item-title>
-            </v-list-item>
-            </router-link>
-            <router-link to="/about">
-            <v-list-item>
-              <v-list-item-title>Sobre</v-list-item-title>
-            </v-list-item>
-            </router-link>
-             <v-list-item>
-              <v-list-item-title @click="navegarAreaAdm">Área Administrativa</v-list-item-title>
-            </v-list-item>
-          </v-list-item-group>
-        </v-list>
-      </v-navigation-drawer>
-  </v-container>
+  </body>
+</div>
+  
 
-</template> 
-
+</template>
 <script>
-
 export default {
-  data: () => ({
-    drawer: false,
-    group: null,
-  }),
-
-  watch: {
-    group () {
-      this.drawer = false;
-    },
-  },
-  methods: {
-    navegarAreaAdm(){
-      this.$router.push('/AreaAdm/Login')
-    }
-  },
 }
 </script>
+
 <style>
-.menu{
-    display: flex; 
-    justify-content: space-between;
+.body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
-.logo{
-  width: 110px;
-  align-content: flex-end;
-  height: 90px;
+.header{
+  height: 100px;
+  background: black;
+  padding: 0 20px;
+  color: #fff;
 }
-/* #titulo{
-    align-content: center;
-    margin-bottom: 10px;
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace
-} */
-#titulo img{
+.titulo img{
+  line-height: 100px;
+  float: left;
+  /* text-transform: uppercase; */
   width: 200px;
 }
-#logo{
-  width: 70px;
+
+.menu{
+  float: right;
+  line-height: 100px;
 }
-a {  text-decoration: none;}
+.v-application .menu a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+
+.v-application .menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover,
+.menu a.router-link-exact-active {
+  color: #3498db;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+ 
+  .v-parallax{
+    position: relative;
+    z-index: -12000;
+  }
+ 
+}
 </style>

@@ -1,41 +1,59 @@
 <template>
+  <div id="app" >
+  <v-container id="inspire">
+    <v-container
+        class="pa-2"
+        fluid
+      >
+        <v-row>
+          <v-col  
+            v-for="card in cards"
+            :key="card.title"
+            cols="12"
+            :sm="card.flex"
+          >
+            <v-card>
+              <v-img
+                :src="card.src"
+                class="white--text"
+                height="200px"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              >
+                <v-card-title
+                  class="fill-height align-end "
+                  v-text="card.title"
+                ></v-card-title>
+              </v-img>
   
-  <v-container fluid class="pa-0">
-    <v-row align="center">
-      <v-col cols="12" sm="6">
-        <div class="text-center">
-          <div class="my-2">
-            <v-btn x-large  @click="produtos" color="primary" dark>Produto</v-btn>
-          </div>
-        </div>
-      </v-col>
-      <v-col cols="12" sm="6">
-        <div class="text-center">
-          <div class="my-2">
-            <v-btn x-large   @click="usuarios" color="primary" dark>Usuário</v-btn>
-          </div>
-        </div>
-      </v-col>
-    </v-row>
-    <total-user-prod/>
+              <v-card-actions class="black">
+              <v-btn
+                text
+                color="white"
+                :href="card.href"
+              >
+                Gerenciar
+              </v-btn>
+              </v-card-actions>
+                    </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
   </v-container>
+</div>
 </template>
 
-
 <script>
-import TotalUserProd from './TotalUserProd.vue'
 export default {
-  components:{
-    TotalUserProd,
-  },
-  methods:{
-    produtos(){
-      this.$router.push('/AreaAdm/ProdutoAdm')
-    },
-     usuarios(){
-      this.$router.push('/AreaAdm/UsuarioAdm')
-    }
-  }
+    data: () => ({
+    cards: [
+      { title: 'Filmes', src: require('../assets/CARDS MENORES/menino.jpg'), 
+      href:'/AreaAdm/FormularioFilmes', flex: 4, },
+      { title: 'Curiosidades', src: require('../assets/CARDS MENORES/governo2.jpg'),
+      href:'/AreaAdm/FormularioCuri', flex: 4 },
+      { title: 'Usuários', src: require('../assets/CARDS MENORES/brasil.jpg'),
+      href:'/AreaAdm/Formulario', flex: 4 },
+    ],
+  }),
 }
 </script>
 

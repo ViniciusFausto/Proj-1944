@@ -1,115 +1,139 @@
-<template >
-  <v-container 
-  class="menu grey darken-4 align-center"
-   style="max-width: 100%;">
-          <div><img src="../assets/Menu.svg" alt="" width="40" @click.stop="drawer = !drawer"> </div>
-         <div id="titulo">
+<template>
+  <div>
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  </head>
+  <body class="body">
+<header class="header">
+    <div class="titulo">
            <img src="../assets/img/logosite.svg" alt="" srcset="">
          </div>
-         <router-link to="/">
-         <div class="logo">
-           <img src="../assets/img/Icone44.png" id="logo" alt="">
-         </div>
-         </router-link>
-      <v-navigation-drawer
-        v-model="drawer"
-        absolute
-        height="100%"
-        temporary
-    
-      >  <v-list-item>
-              <v-list-item-action>
-                <img src="../assets/MenuDentro.svg" alt="" width="40" @click.stop="drawer = !drawer">
-              </v-list-item-action>
-            </v-list-item>
-              <v-list>
-          <v-list-item>
-            <v-list-item-avatar>
-              <v-img src="https://randomuser.me/api/portraits/women/85.jpg"></v-img>
-            </v-list-item-avatar>
-          </v-list-item>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
 
-          <v-list-item
-            link
-            two-line
-          >
-            <v-list-item-content>
-              <v-list-item-title class="title">{{user.nome}}</v-list-item-title>
-              <v-list-item-subtitle><a :href="`mailto:${user.email}`">{{ user.email }}</a></v-list-item-subtitle>
-            </v-list-item-content>
-          
-          </v-list-item>
-        </v-list>
-      
+    <ul class="menu">
+      <router-link to="/">Inicio</router-link>
+      <router-link to="/AreaAdm/Index">Gerenciar</router-link>
+      <router-link to="/AreaAdm/UsuarioAdm">Usuários</router-link>
+      <router-link to="/AreaAdm/FilmeAdm">Filmes</router-link>
+      <router-link to="/AreaAdm/CuriAdm">Curiosidades</router-link>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+</header>
+   
 
-      <v-divider></v-divider>
-        <v-list
-          nav
-          dense
-        >
-          <v-list-item-group
-            v-model="group"
-            active-class="white--text black"
-          >
-            <router-link to="/AreaAdm/UsuarioAdm">
-            <v-list-item>
-              <v-list-item-title>Usuários</v-list-item-title>
-            </v-list-item>
-            </router-link>
-          </v-list-item-group>
-        </v-list>
-              
-        <v-btn class="ml-2" icon @click="sair">
-         <v-span>Sair</v-span>
-        </v-btn>
-      
-      </v-navigation-drawer>
-  </v-container>
+  </body>
+</div>
+  
 
-</template> 
-
+</template>
 <script>
 export default {
-  computed:{
-    user(){
-      return this.$ls.get('user')
-    }
-  },
-  data: () => ({
-    drawer: false,
-    group: null,
-  }),
-
-  watch: {
-    group () {
-      this.drawer = false;
-    },
-  },
-  methods: {
-    navegarHome(){
-      this.$router.push('/')
-    },
-    sair () {
-      this.$ls.remove('user')
-      this.$router.push('/')
-    }
-  },
 }
 </script>
+
 <style>
+.body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+.header{
+  height: 100px;
+  background: black;
+  padding: 0 20px;
+  color: #fff;
+}
+.titulo img{
+  line-height: 100px;
+  float: left;
+  /* text-transform: uppercase; */
+  width: 200px;
+}
+
 .menu{
-    display: flex; 
-    justify-content: space-between;
+  float: right;
+  line-height: 100px;
 }
-.logo{
-  width: 110px;
-  align-content: flex-end;
-  height: 90px;
+.v-application .menu a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
 }
-/* #titulo img{
-  width: 100px;
-} */
-#logo{
-  width: 70px;
+
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+
+.v-application .menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover,
+.menu a.router-link-exact-active {
+  color: #3498db;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+ 
+  .v-parallax{
+    position: relative;
+    z-index: -12000;
+  }
+ 
 }
 </style>
