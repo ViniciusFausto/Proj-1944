@@ -1,5 +1,6 @@
 <template>
-  <v-container style="margin-top:128px">
+  <v-container>
+    <h1 class="text-center display-4 my-6">Formulário de cadastro</h1>
       <form>
         <v-text-field
           v-model="name"

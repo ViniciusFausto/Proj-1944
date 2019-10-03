@@ -2,7 +2,7 @@
   <v-container 
   class="menu grey darken-4 align-center"
    style="max-width: 100%;">
-          <div><img src="../assets/Menu.svg" alt="" width="50" @click.stop="drawer = !drawer"> </div>
+          <div><img src="../assets/Menu.svg" alt="" width="40" @click.stop="drawer = !drawer"> </div>
          <div id="titulo">
            <img src="../assets/img/logosite.svg" alt="" srcset="">
          </div>
@@ -19,7 +19,7 @@
     
       >  <v-list-item>
               <v-list-item-action>
-                <img src="../assets/MenuDentro.svg" alt="" width="50" @click.stop="drawer = !drawer">
+                <img src="../assets/MenuDentro.svg" alt="" width="40" @click.stop="drawer = !drawer">
               </v-list-item-action>
             </v-list-item>
               <v-list>
