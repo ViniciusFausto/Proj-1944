@@ -1,7 +1,7 @@
 <template>
-  <v-container>
-    <h1 class="text-center display-4 my-6">Formulário de Filme</h1>
-      <form>
+  <v-container class="mt-12">
+    <h1 class="text-center">Formulário de Filme</h1>
+      <form class="mt-5">
         <v-text-field
           v-model="name"
           :error-messages="nameErrors"

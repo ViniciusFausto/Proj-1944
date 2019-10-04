@@ -12,7 +12,7 @@
             cols="12"
             :sm="card.flex"
           >
-            <v-card>
+            <v-card style="border-radius:unset">
               <v-img
                 :src="card.src"
                 class="white--text"
@@ -47,11 +47,13 @@ export default {
     data: () => ({
     cards: [
       { title: 'Filmes', src: require('../assets/CARDS MENORES/menino.jpg'), 
-      href:'/AreaAdm/FormularioFilmes', flex: 4, },
+      href:'/AreaAdm/FilmeAdm', flex: 6, },
       { title: 'Curiosidades', src: require('../assets/CARDS MENORES/governo2.jpg'),
-      href:'/AreaAdm/FormularioCuri', flex: 4 },
+      href:'/AreaAdm/CuriAdm', flex: 6 },
       { title: 'Usuários', src: require('../assets/CARDS MENORES/brasil.jpg'),
-      href:'/AreaAdm/Formulario', flex: 4 },
+      href:'/AreaAdm/UsuarioAdm', flex: 6 },
+      { title: 'Histórias', src: require('../assets/CARDS MENORES/DIAd.png'),
+      href:'/AreaAdm/HistoriaAdm', flex: 6 },
     ],
   }),
 }

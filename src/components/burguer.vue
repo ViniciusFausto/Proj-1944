@@ -19,11 +19,10 @@
     </label>
 
     <ul class="menu">
-      <router-link to="/">Inicio</router-link>
+      <router-link to="/">Início</router-link>
       <router-link to="/historia">História</router-link>
       <router-link to="/Curiosidades">Curiosidades</router-link>
       <router-link to="/about">Sobre</router-link>
-      <router-link to="/catalogos">Catálogos</router-link>
       <router-link to="/AreaAdm/Login">Área Administrativa</router-link>
       <label for="chk" class="hide-menu-btn">
         <i class="fas fa-times"></i>
@@ -46,7 +45,7 @@ export default {
 .body{
   margin: 0;
   padding: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: serif;
 }
 .header{
   height: 100px;
@@ -70,6 +69,7 @@ export default {
   text-transform: uppercase;
   text-decoration: none;
   padding: 0 10px;
+  font-size: 16px;
   transition: 0.4s;
 }
 
@@ -90,7 +90,7 @@ export default {
 .show-menu-btn:hover,
 .hide-menu-btn:hover,
 .menu a.router-link-exact-active {
-  color: #3498db;
+  color: #FFB74D;
 }
 
 #chk{

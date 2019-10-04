@@ -57,6 +57,11 @@ export default new Router({
       component: () => import('./views/AreaAdm/FormularioCuri.vue')
     },
     {
+      path:'/AreaAdm/FormularioHistoria',
+      name:'painel-formularioHist',
+      component: () => import('./views/AreaAdm/FormularioHistoria.vue')
+    },
+    {
       path:'/AreaAdm/UsuarioAdm',
       name:'painel-usuario',
       component: () => import('./views/AreaAdm/UsuarioAdm.vue')
@@ -70,6 +75,11 @@ export default new Router({
       path:'/AreaAdm/CuriAdm',
       name:'painel-curi',
       component: () => import('./views/AreaAdm/CuriAdm.vue')
+    },
+    {
+      path:'/AreaAdm/HistoriaAdm',
+      name:'painel-historia',
+      component: () => import('./views/AreaAdm/HistoriaAdm.vue')
     },
     {
       path:'/Curiosidades',

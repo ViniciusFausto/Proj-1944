@@ -47,7 +47,7 @@ export default {
     data: () => ({
     cards: [
       { title: 'Filmes', src: require('../assets/CARDS MENORES/menino.jpg'), 
-      href:'/Catalogo', flex: 12, },
+      href:'/Curiosidades', flex: 12, },
     ],
   }),
 }

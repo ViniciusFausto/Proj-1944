@@ -16,7 +16,7 @@
         <div class="flex-grow-1"></div>
           <template>
             <router-link to="/AreaAdm/FormularioCuri">
-            <v-btn color="primary" dark class="mb-2" >Nova Curiosidade</v-btn>
+            <v-btn color="#FB8C00" dark class="mb-2" >Nova Curiosidade</v-btn>
             </router-link>
           </template>
       </v-toolbar>

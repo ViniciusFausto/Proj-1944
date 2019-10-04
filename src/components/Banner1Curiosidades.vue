@@ -11,9 +11,6 @@
             :key="card.title"
             cols="12"
             :sm="card.flex"
-            style="-webkit-box-shadow: 0px 7px 21px 0px rgba(0,0,0,0.75)
-                  -moz-box-shadow: 0px 7px 21px 0px rgba(0,0,0,0.75)
-                  box-shadow: 0px 7px 21px 0px rgba(0,0,0,0.75)" 
                          class="my-2"
                 >
        
@@ -70,8 +67,6 @@ export default {
       text:'www.google.com',subtext:"sssssssssss", flex: 6 },
       { title: 'Curiosidades', src: require('../assets/CARDS MAIORES/guerraCURIOSIDADES.jpg'),
       text:'/Curiosidades',subtext:"uuuuuuuuuuuuuuuu", flex: 6 },
-      { title: 'Governo', src: require('../assets/CARDS MAIORES/governo3.jpg'),
-      text:'www.google.com',subtext:"xxxxxxxxxxxxxxxx", flex: 6,  },
     ],
      show: false,
   }),

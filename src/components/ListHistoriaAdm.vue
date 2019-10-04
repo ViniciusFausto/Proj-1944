@@ -7,7 +7,7 @@
   >
     <template v-slot:top>
       <v-toolbar flat color="white">
-        <v-toolbar-title>Cadastro de Filmes</v-toolbar-title>
+        <v-toolbar-title>Cadastro de História</v-toolbar-title>
         <v-divider
           class="mx-4"
           inset
@@ -15,8 +15,8 @@
         ></v-divider>
         <div class="flex-grow-1"></div>
           <template>
-            <router-link to="/AreaAdm/FormularioFilmes">
-            <v-btn color="#FB8C00" dark class="mb-2" >Novo Filme</v-btn>
+            <router-link to="/AreaAdm/FormularioHistoria">
+            <v-btn color="#FB8C00" dark class="mb-2" >Nova História</v-btn>
             </router-link>
           </template>
       </v-toolbar>

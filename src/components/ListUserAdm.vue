@@ -16,7 +16,7 @@
         <div class="flex-grow-1"></div>
           <template>
             <router-link to="/AreaAdm/Formulario">
-            <v-btn color="primary" dark class="mb-2" >Novo Usuário</v-btn>
+            <v-btn color="#FB8C00" dark class="mb-2" >Novo Usuário</v-btn>
             </router-link>
           </template>
       </v-toolbar>
