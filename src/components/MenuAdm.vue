@@ -46,7 +46,7 @@ export default {
 .body{
   margin: 0;
   padding: 0;
-  font-family: serif;
+  font-family: sans-serif;
 }
 .header{
   height: 100px;
@@ -112,6 +112,7 @@ export default {
     width: 100%;
     height: 500px;
     background: #333;
+      display: none;
     right: -100%;
     top: 0;
     text-align: center;
@@ -136,6 +137,11 @@ export default {
     position: relative;
     z-index: -12000;
   }
+  .v-application .menu a{
+     padding-top: 10px;
+  padding-bottom: 10px;
+  }
+ 
  
 }
 </style>
