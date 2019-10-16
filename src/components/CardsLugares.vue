@@ -13,15 +13,15 @@
             :sm="card.flex"
             class="my-2"
                 >
-      <router-link :to="{path: card.to}">
+ 
       <v-img
       :src="card.src"
-      height="200px"
+      height="300px"
       @click="show = !show"
     ></v-img>
-    </router-link>
 
-    <v-card-title style="font-family:sans-serif" class="black white--text justify-center display-1">
+
+    <v-card-title style="font-family:sans-serif; height:50px"  class="black white--text align-self-center justify-center display-1">
       <div>{{card.title}}</div>
     </v-card-title>
 
@@ -62,14 +62,14 @@
 export default {
     data: () => ({
     cards: [
-      { title: 'Filmes', src: require('../assets/CARDS MENORES/menino.jpg'), 
-      text:'www.google.com',subtext:"jadhskhkadhkas", flex: 6, to:'/filmes' },
-      { title: 'A Era de Hiter', src: require('../assets/CARDS MENORES/governo2.jpg'),
-      text:'www.google.com',subtext:"aaaaaaaaaaaaa", flex: 6, },
-      { title: 'A Cobra vai fumar',subtext:"bbbbbbbbbbbbbbbbbbbb", src: require('../assets/CARDS MENORES/brasil.jpg'),
-      text:'www.google.com',subtext:"sssssssssss", flex: 6 },
-      { title: 'Lugares Afetados', src: require('../assets/IMG CARROSSEL/antesDepois.png'),
-      text:'aaaaaaaaa',subtext:"uuuuuuuuuuuuuuuu", flex: 6, to:'/lugares' },
+      { title: 'Filmes', src: require('../assets/IMG LUGARES/2.png'), 
+      text:'www.google.com',subtext:"jadhskhkadhkas", flex: 12, },
+      { title: 'A Era de Hiter', src: require('../assets/IMG LUGARES/4.png'),
+      text:'www.google.com',subtext:"aaaaaaaaaaaaa", flex: 12, },
+      { title: 'A Cobra vai fumar',subtext:"bbbbbbbbbbbbbbbbbbbb", src: require('../assets/IMG LUGARES/antesDepois.png'),
+      text:'www.google.com',subtext:"sssssssssss", flex: 12 },
+      { title: 'Lugares Afetados', src: require('../assets/IMG LUGARES/7.jpg'),
+      text:'aaaaaaaaa',subtext:"uuuuuuuuuuuuuuuu", flex: 12, },
     ],
      show: false,
   }),

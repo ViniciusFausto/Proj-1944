@@ -7,8 +7,9 @@
     style="border-radius:0px;"
   >
     <v-img
-      src="../assets/IMG CARROSSEL/slide4.png"
+      src="../assets/img/hitler.png"
       height="300px"
+      @click="show = !show"
     ></v-img>
 
     <v-card-title style="font-family:calibri" class="black white--text justify-center display-1">

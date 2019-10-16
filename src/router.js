@@ -27,6 +27,16 @@ export default new Router({
       component: () => import('./views/Historia.vue')
     },
     {
+      path: '/lugares',
+      name: 'lugares',
+      component: () => import('./views/Lugares.vue')
+    },
+    {
+      path: '/filmes',
+      name: 'filmes',
+      component: () => import('./views/Filmes.vue')
+    },
+    {
       path:'/AreaAdm/Login',
       name:'painel-login',
       component: () => import('./views/AreaAdm/Login.vue')

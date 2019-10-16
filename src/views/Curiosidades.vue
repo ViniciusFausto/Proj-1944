@@ -9,12 +9,11 @@
 <script>
 import Menu from '../components/Menu.vue';
 import ImgTextCuriosidades from '../components/ImgTextCuriosidades.vue'
-import SubImgCuriosidades from '../components/SubImgCuriosidades.vue'
 import Banner1 from '../components/Banner1Curiosidades.vue'
 
 export default {
       components: {
-   Menu,ImgTextCuriosidades,SubImgCuriosidades,Banner1,
+   Menu,ImgTextCuriosidades,Banner1,
   },
 }
 </script>

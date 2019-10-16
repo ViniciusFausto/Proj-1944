@@ -17,15 +17,15 @@
       return {
         items: [
           {
-            src: require('../assets/IMG CARROSSEL/nave3.jpg'),
-            href:'/Catalogos'
+            src: require('../assets/IMG CARROSSEL/antesDepois.png'),
+            href:'/Curiosidades'
           },
           {
             src: require('../assets/IMG CARROSSEL/dunkirk.jpg'),
             href:'/Curiosidades'
           },
           {
-            src: require('../assets/IMG CARROSSEL/antes.jpg'),
+            src: require('../assets/IMG CARROSSEL/nave3.jpg'),
             href:'/Curiosidades'
           },
           {

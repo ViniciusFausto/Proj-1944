@@ -20,9 +20,9 @@
 
     <ul class="menu">
       <router-link to="/">Início</router-link>
-      <router-link to="/about">Sobre</router-link>
       <router-link to="/historia">História</router-link>
       <router-link to="/Curiosidades">Curiosidades</router-link>
+      <router-link to="/about">Sobre</router-link>
       <router-link to="/AreaAdm/Login">Área Administrativa</router-link>
       <label for="chk" class="hide-menu-btn">
         <i class="fas fa-times"></i>
@@ -56,8 +56,8 @@ export default {
 .titulo img{
   line-height: 100px;
   float: left;
-  /* text-transform: uppercase; */
-  width: 190px;
+  width: 180px;
+  margin-top: 10px;
 }
 
 .menu{

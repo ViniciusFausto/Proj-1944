@@ -57,8 +57,8 @@ export default {
 .titulo img{
   line-height: 100px;
   float: left;
-  /* text-transform: uppercase; */
-  width: 200px;
+  margin-top: 10px;
+  width: 180px;
 }
 
 .menu{

@@ -7,8 +7,9 @@
     style="border-radius:0px;"
   >
     <v-img
-      src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
+      src="../assets/img/bannerCuri.png"
       height="300px"
+      @click="show = !show"
     ></v-img>
 
     <v-card-title style="font-family:calibri" class="black white--text justify-center display-1">

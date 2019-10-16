@@ -14,7 +14,7 @@
         ></v-img>
       </v-col>
       <v-col class="text-center">
-        <v-container class="pa-0">
+        <v-container class="pa-0 mb-4">
           <v-row>
             <div class="textobanner">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cum voluptates distinctio, cupiditate ipsa veritatis quis illum inventore excepturi? Ex expedita molestias delectus praesentium porro in aut dicta quasi corporis.

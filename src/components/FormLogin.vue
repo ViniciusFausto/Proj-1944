@@ -92,7 +92,7 @@
           nome: 'Master',
           email: 'master.gamer666@gmail.com'
         })
-        this.$router.push('/AreaAdm/Index')
+        this.$router.push('/AreaAdm/UsuarioAdm')
       }else{
         this.alerta = 'Usuário ou senha não correspondentes.'
       }

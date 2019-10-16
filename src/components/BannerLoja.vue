@@ -2,7 +2,7 @@
   <div id="app" >
   <v-container id="inspire">
     <v-container
-        class="pa-2 "
+        class="pa-2 mb-3 "
         fluid
       >
         <v-row>

@@ -46,6 +46,10 @@ export default {
       texto:"sahdklhkshkjahsdjkhjadkhadshjkhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"},
       { title: 'Guerraaa', src: require('../assets/CARDS MAIORES/governo3.jpg'), flex: 6,
         texto:"texto card 2"  },
+              { title: 'Hitler', src: require('../assets/CARDS MENORES/DIAd.png'), flex: 6,
+      texto:"sahdklhkshkjahsdjkhjadkhadshjkhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"},
+      { title: 'Guerraaa', src: require('../assets/CARDS MAIORES/governo3.jpg'), flex: 6,
+        texto:"texto card 2"  },
     ],
   }),
 }

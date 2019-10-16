@@ -1,5 +1,10 @@
 <template>
   <div id="app" >
+  <v-container
+    fluid
+    class="text-center font-weight-thin"
+    style="font-size:40px"
+  >Aprenda sobre a 2º Guerra Mundial</v-container>
   <v-container id="inspire">
     <v-container
         class="pa-2"
