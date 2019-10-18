@@ -3,7 +3,6 @@
   <Menu/>
   <banner-historia/>
   <SubImgHist/>
-  <ImgTextoHist/>
 </div>
 </template>
 
@@ -11,11 +10,10 @@
 import Menu from '../components/Menu.vue';
 import BannerHistoria from '../components/BannerHistoria.vue'
 import SubImgHist from '../components/SubImgHist.vue'
-import ImgTextoHist from '../components/imgTextoHist.vue'
 
 export default {
       components: {
-   Menu,BannerHistoria,SubImgHist,ImgTextoHist,
+   Menu,BannerHistoria,SubImgHist,
   },
 }
 </script>

@@ -4,10 +4,10 @@
     fluid
     class="text-center font-weight-thin"
     style="font-size:40px"
-  >Aprenda sobre a 2º Guerra Mundial</v-container>
+  >Descubra mais sobre a 2º Guerra Mundial</v-container>
   <v-container id="inspire">
     <v-container
-        class="pa-2"
+        class="pa-2 mb-5"
         fluid
       >
         <v-row>
@@ -52,15 +52,15 @@ export default {
     data: () => ({
     cards: [
       { title: 'Filmes', src: require('../assets/CARDS MENORES/menino.jpg'), 
-      href:'www.google.com', flex: 4, },
+      href:'/filmes', flex: 4, },
       { title: 'A Era de Hiter', src: require('../assets/CARDS MENORES/governo2.jpg'),
-      href:'www.google.com', flex: 4 },
+      href:'/historia', flex: 4 },
       { title: 'A Cobra vai fumar', src: require('../assets/CARDS MENORES/brasil.jpg'),
-      href:'www.google.com', flex: 4 },
+      href:'/Curiosidades', flex: 4 },
       { title: 'Curiosidades', src: require('../assets/CARDS MAIORES/ovin.png'),
-      href:'/Curiosidades', flex: 6 },
+      href:'/historia', flex: 6 },
       { title: 'Governo', src: require('../assets/CARDS MAIORES/governo3.jpg'),
-      href:'www.google.com', flex: 6,  },
+      href:'/historia', flex: 6,  },
     ],
   }),
 }

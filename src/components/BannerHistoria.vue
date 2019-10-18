@@ -18,7 +18,7 @@
 
     <v-card-actions>
       <div class="ml-2">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, rerum necessitatibus nemo deleniti vel facere. Distinctio animi dolor, vero, atque est, culpa consequatur beatae dolore maiores debitis itaque magnam pariatur.
+       Motivos do início da Segunda Guerra Mundial
       </div>
 
       <div class="flex-grow-1"></div>
@@ -34,8 +34,15 @@
 
     <v-expand-transition>
       <div v-show="show">
-        <v-card-text>
-          I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+        <v-card-text style="font-family: serif">
+         Podemos considerar que a principal causa que originou a Segunda Guerra Mundial (1939-1945) foi a ideia de Hitler de expandir os domínios territoriais da Alemanha e ampliar, dessa forma, a obtenção de poder e recursos materiais (principalmente matérias-primas). Estes objetivos seriam conquistados, de acordo com as intenções nazistas, através da guerra. Estes objetivos militaristas e expansionistas também se faziam presentes, no final da década de 1930, na Itália fascista de Mussolini e no Japão. 
+
+ Como sabemos somente ideias de governos não são suficientes para causar uma guerra, ainda mais uma de grandes proporções como foi a Segunda Guerra Mundial. Em 1 de setembro de 1939, Hitler coloca em prática seu plano e invade a Polônia. Inglaterra e França declaram guerra contra Alemanha, dando início ao maior conflito bélico de todos os tempos.
+
+ Forte militarização da Alemanha e da Itália durante a década de 1930. O forte investimento na indústria bélica tinha como objetivo diminuir o alto nível de desemprego, mas também colocar em prática os ideais expansionistas nazifascistas. O Japão também investiu na área militar, pois pretendia conquistar território na Ásia, através da guerra.
+
+ O sentimento revanchista na Alemanha nazista com relação à derrota na Primeira Guerra Mundial. Hitler pretendia desrespeitar o Tratado de Versalhes e reconquistar territórios perdidos na Primeira Guerra.
+
         </v-card-text>
       </div>
     </v-expand-transition>

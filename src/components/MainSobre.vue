@@ -18,7 +18,7 @@
         class="d-flex">
         <!--O video ta responsivo, mas não sei se funciona pra videos fora do youtube-->
             <div class="iframe-container">
-              <iframe width="" height="" src="https://www.youtube.com/embed/MfmoIHY7Z-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="" height="" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>  
         </v-col>
       </v-row>

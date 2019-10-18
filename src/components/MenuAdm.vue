@@ -22,9 +22,6 @@
       <router-link to="/">Início</router-link>
       <router-link to="/AreaAdm/Index">Gerenciar</router-link>
       <router-link to="/AreaAdm/UsuarioAdm">Usuários</router-link>
-      <router-link to="/AreaAdm/HistoriaAdm">História</router-link>
-      <router-link to="/AreaAdm/FilmeAdm">Filmes</router-link>
-      <router-link to="/AreaAdm/CuriAdm">Curiosidades</router-link>
       <label for="chk" class="hide-menu-btn">
         <i class="fas fa-times"></i>
       </label>
