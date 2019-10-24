@@ -6,9 +6,9 @@
         cols="12"
         md="4"
         >
-          <h1 align="center">Nossa História</h1> 
+          <h1 align="center" class="semSerif negrito">Nossa História</h1> 
           <v-divider></v-divider>
-          <p>
+          <p class="serif">
             Somos um grupo de entusiastas nos meio histórico e estudantes no meio front-end, assim decidimos juntar tudo isso em um único trabalho, focando em transmitir parte importante do conhecimento histórico que foram os anos de 1914 à 1945, época marcada pelas duas maiores guerras que a humanidade já viveu. 
           </p>
         </v-col>
@@ -77,5 +77,14 @@ p{
 }
 img{
   padding-bottom: 12px;
+}
+.serif{
+  font-family: serif;
+}
+.semSerif{
+  font-family: sans-serif;
+}
+.negrito{
+  font-weight: bold;
 }
 </style>

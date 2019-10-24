@@ -19,6 +19,7 @@
           >
             <v-card>
               <v-img
+                :alt="card.alt"
                 :src="card.src"
                 class="white--text"
                 height="200px"
@@ -52,15 +53,15 @@ export default {
     data: () => ({
     cards: [
       { title: 'Filmes', src: require('../assets/CARDS MENORES/menino.jpg'), 
-      href:'/filmes', flex: 4, },
+      href:'/filmes', flex: 4,alt:'filme menino do pijama listrado' },
       { title: 'A Era de Hiter', src: require('../assets/CARDS MENORES/governo2.jpg'),
-      href:'/historia', flex: 4 },
+      href:'/historia', flex: 4,alt:'hitler fazendo sinal' },
       { title: 'A Cobra vai fumar', src: require('../assets/CARDS MENORES/brasil.jpg'),
-      href:'/Curiosidades', flex: 4 },
+      href:'/Curiosidades', flex: 4,alt:'exercito brasileiro' },
       { title: 'Curiosidades', src: require('../assets/CARDS MAIORES/ovin.png'),
-      href:'/historia', flex: 6 },
+      href:'/historia', flex: 6,alt:'aeronave alienigena' },
       { title: 'Governo', src: require('../assets/CARDS MAIORES/governo3.jpg'),
-      href:'/historia', flex: 6,  },
+      href:'/historia', flex: 6,alt:'hitler e seus seguidores'  },
     ],
   }),
 }

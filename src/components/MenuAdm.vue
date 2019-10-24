@@ -10,21 +10,22 @@
   </head>
   <body class="body">
 <header class="header">
+  <router-link to='/'>
     <div class="titulo">
            <img src="../assets/img/logosite.svg" alt="" srcset="">
          </div>
+  </router-link>
     <input type="checkbox" id="chk">
     <label for="chk" class="show-menu-btn">
       <i class="fas fa-bars"></i>
     </label>
 
     <ul class="menu">
-      <router-link to="/">Início</router-link>
-      <router-link to="/AreaAdm/Index">Gerenciar</router-link>
-      <router-link to="/AreaAdm/UsuarioAdm">Usuários</router-link>
+      <router-link to="/">Página Inicial</router-link>
+      <router-link to="/AreaAdm/UsuarioAdm">Gerenciar</router-link>
       <label for="chk" class="hide-menu-btn">
-        <i class="fas fa-times"></i>
-      </label>
+      <i class="fas fa-times"></i>
+   </label>
     </ul>
 </header>
    
@@ -55,7 +56,7 @@ export default {
   line-height: 100px;
   float: left;
   margin-top: 10px;
-  width: 180px;
+  width: 160px;
 }
 
 .menu{

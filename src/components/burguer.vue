@@ -10,9 +10,11 @@
   </head>
   <body class="body">
 <header class="header">
+  <router-link to="/">
     <div class="titulo">
-           <img src="../assets/img/logosite.svg" alt="" srcset="">
-         </div>
+           <img src="../assets/img/logosite.svg" alt="Logo do site" >
+    </div>
+  </router-link>
     <input type="checkbox" id="chk">
     <label for="chk" class="show-menu-btn">
       <i class="fas fa-bars"></i>
@@ -56,7 +58,7 @@ export default {
 .titulo img{
   line-height: 100px;
   float: left;
-  width: 180px;
+  width: 160px;
   margin-top: 10px;
 }
 

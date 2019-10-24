@@ -7,6 +7,7 @@
     style="border-radius:0px;"
   >
     <v-img
+      alt="Hitler sério"
       src="../assets/img/hitler.png"
       height="300px"
       @click="show = !show"
@@ -17,7 +18,7 @@
     </v-card-title>
 
     <v-card-actions>
-      <div class="ml-2">
+      <div class="ml-2 serif negrito">
        Motivos do início da Segunda Guerra Mundial
       </div>
 
@@ -34,7 +35,7 @@
 
     <v-expand-transition>
       <div v-show="show">
-        <v-card-text style="font-family: serif">
+        <v-card-text class="serifada fonte">
          Podemos considerar que a principal causa que originou a Segunda Guerra Mundial (1939-1945) foi a ideia de Hitler de expandir os domínios territoriais da Alemanha e ampliar, dessa forma, a obtenção de poder e recursos materiais (principalmente matérias-primas). Estes objetivos seriam conquistados, de acordo com as intenções nazistas, através da guerra. Estes objetivos militaristas e expansionistas também se faziam presentes, no final da década de 1930, na Itália fascista de Mussolini e no Japão. 
 
  Como sabemos somente ideias de governos não são suficientes para causar uma guerra, ainda mais uma de grandes proporções como foi a Segunda Guerra Mundial. Em 1 de setembro de 1939, Hitler coloca em prática seu plano e invade a Polônia. Inglaterra e França declaram guerra contra Alemanha, dando início ao maior conflito bélico de todos os tempos.
@@ -59,5 +60,17 @@ export default {
 </script>
 
 <style>
-
+  .serif{
+    font-family: sans-serif;
+  }
+  .serifada{
+    font-family: serif;
+  }
+  .negrito{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .fonte{
+  font-size: 17px;
+}
 </style>
