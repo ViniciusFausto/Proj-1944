@@ -19,7 +19,7 @@
 
     <v-card-actions>
       <div class="ml-2 semSerif negrito">
-          Veja uma das armas mais mortíferas já criadas pelo homem
+          Veja mais sobre uma das armas mais mortíferas já criadas pelo homem
       </div>
 
       <div class="flex-grow-1"></div>
