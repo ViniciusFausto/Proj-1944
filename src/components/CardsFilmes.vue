@@ -27,25 +27,25 @@
 
     
     <v-card-actions>
-      <div class="ml-2 negrito">
+      <div class="ml-2 negrito semSerif">
         {{card.text}}
       </div>
 
-      <div class="flex-grow-1"></div>
+      <!-- <div class="flex-grow-1"></div> -->
 
       <v-btn
         icon
         @click="show = !show"
 
       > 
-        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+        <v-icon class="black--text">{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
         
       </v-btn>
     </v-card-actions>
 
     <v-expand-transition>
       <div v-show="show">
-        <v-card-text class="fonte">
+        <v-card-text class="fonte serif">
          {{card.subtext}}
         </v-card-text>
       </div>
@@ -89,4 +89,5 @@ export default {
 .fonte{
   font-size: 17px;
 }
+
 </style>

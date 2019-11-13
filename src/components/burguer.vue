@@ -21,11 +21,15 @@
     </label>
 
     <ul class="menu">
-      <router-link to="/">Início</router-link>
-      <router-link to="/historia">História</router-link>
-      <router-link to="/Curiosidades">Curiosidades</router-link>
-      <router-link to="/about">Sobre</router-link>
-      <router-link to="/AreaAdm/Login">Área Administrativa</router-link>
+      <router-link to="/" accesskey="1">ALT+1: Início</router-link>
+      <router-link to="/historia" accesskey="2">ALT+2: História</router-link>
+      <router-link to="/Curiosidades" accesskey="3">ALT+3: Curiosidades</router-link>
+      <router-link to="/about" accesskey="4">ALT+4: Sobre</router-link>
+      <router-link to="/AreaAdm/Login" accesskey="5">ALT+5: Área Administrativa</router-link>
+      <a class="zoom_mais" id="aumentar" title="Aumentar fonte">A+</a>
+      <a class="zoom_normal" id="normal" title="Normalizar fonte">A</a>
+       <a class="zoom_menos" id="diminuir" title="Diminuir fonte">A-</a>
+       <a class="ico-acessibilidade ico-contraste" id="contraste" title="Contraste">C</a>
       <label for="chk" class="hide-menu-btn">
         <i class="fas fa-times"></i>
       </label>
@@ -39,8 +43,15 @@
 
 </template>
 <script>
-export default {
-}
+    // var body = document.getElementsByTagName('body')
+    // var aumentar = document.getElementById('aumentar')
+    // var diminuir = document.getElementById('diminuir')
+    // var normal = document.getElementById('normal')
+    // var  contraste = document.getElementById('contraste')
+
+    // aumentar.addEventListener('click',function(){
+    //   console.log('clicou aumentar')
+    // })
 </script>
 
 <style>
@@ -50,7 +61,7 @@ export default {
   font-family: sans-serif;
 }
 .header{
-  height: 100px;
+  height: 120px;
   background: black;
   padding: 0 20px;
   color: #fff;
@@ -59,12 +70,12 @@ export default {
   line-height: 100px;
   float: left;
   width: 160px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .menu{
   float: right;
-  line-height: 100px;
+  line-height: 120px;
 }
 .v-application .menu a{
   color: #fff;

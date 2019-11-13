@@ -13,7 +13,7 @@
       @click="show = !show"
     ></v-img>
 
-    <v-card-title style="font-family:calibri" class="black white--text justify-center display-1">
+    <v-card-title class=" negritoTitleCard  white--text justify-center ">
       <div>História</div>
     </v-card-title>
 
@@ -72,5 +72,12 @@ export default {
   }
   .fonte{
   font-size: 17px;
+}
+.negritoTitleCard{
+  font-weight: bolder;
+  font-size: 35px;
+  height: 70px;
+  background-color:  rgb(43, 29, 8);
+  
 }
 </style>

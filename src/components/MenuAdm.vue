@@ -47,7 +47,7 @@ export default {
   font-family: sans-serif;
 }
 .header{
-  height: 100px;
+  height: 120px;
   background: black;
   padding: 0 20px;
   color: #fff;
@@ -55,13 +55,13 @@ export default {
 .titulo img{
   line-height: 100px;
   float: left;
-  margin-top: 10px;
+  margin-top: 25px;
   width: 160px;
 }
 
 .menu{
   float: right;
-  line-height: 100px;
+  line-height: 120px;
 }
 .v-application .menu a{
   color: #fff;

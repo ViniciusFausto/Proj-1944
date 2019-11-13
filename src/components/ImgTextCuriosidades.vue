@@ -9,26 +9,26 @@
     <v-img
       alt="Maior tanque de guerra já criado"
       src="../assets/img/bannerCuri.png"
-      height="300px"
+      height="400px"
       @click="show = !show"
     ></v-img>
 
-    <v-card-title class="black white--text justify-center semSerif display-1">
+    <v-card-title class=" white--text justify-center negritoTitle semSerif ">
       <div>Tanque Gigante da Segunda Guerra Mundial</div>
     </v-card-title>
 
-    <v-card-actions>
+    <v-card-actions class=" white--text corFundo justify-center">
       <div class="ml-2 semSerif negrito">
           Veja mais sobre uma das armas mais mortíferas já criadas pelo homem
       </div>
 
-      <div class="flex-grow-1"></div>
+      <!-- <div class="flex-grow-1"></div> -->
 
       <v-btn
         icon
         @click="show = !show"
       > 
-        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+        <v-icon class="white--text">{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
         
       </v-btn>
     </v-card-actions>
@@ -57,7 +57,14 @@ export default {
   font-family: serif;
 }
 .semSerif{
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
+}
+.negritoTitle{
+  font-weight: bolder;
+  font-size: 35px;
+  height: 70px;
+  background-color:   rgb(65, 41, 5);
+  
 }
 .negrito{
   font-weight: bold;
@@ -65,5 +72,8 @@ export default {
 }
 .fonte{
   font-size: 17px;
+}
+.corFundo{
+  background-color: rgb(0, 0, 0);
 }
 </style>

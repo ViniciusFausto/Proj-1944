@@ -17,29 +17,29 @@
       <v-img
       :alt="cards.alt" 
       :src="card.src"
-      height="200px"
+      height="250px"
       @click="show = !show"
     ></v-img>
     </router-link>
 
-    <v-card-title class="black white--text justify-center display-1 semSerif">
+    <v-card-title class=" white--text negritoTitleCard justify-center  semSerif">
       <div>{{card.title}}</div>
     </v-card-title>
 
     
-    <v-card-actions>
-      <div class="ml-2 negrito semSerif">
+    <v-card-actions class="back justify-center">
+      <div class="ml-2 white--text  negrito semSerif ">
         {{card.text}}
       </div>
 
-      <div class="flex-grow-1"></div>
+      <!-- <div class="flex-grow-1"></div> -->
 
       <v-btn
         icon
         @click="show = !show"
 
       > 
-        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+        <v-icon class="white--text">{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
         
       </v-btn>
     </v-card-actions>
@@ -89,5 +89,15 @@ export default {
 }
 .fonte{
   font-size: 17px;
+}
+.back{
+  background-color:  rgb(0, 0, 0);
+}
+.negritoTitleCard{
+  font-weight: bolder;
+  font-size: 35px;
+  height: 70px;
+  background-color:  rgb(65, 41, 5);
+  
 }
 </style>
