@@ -2,9 +2,11 @@
   <div id="app" >
   <v-container
     fluid
-    class="text-center font-weight-thin"
+    class="text-center font-weight-light"
     style="font-size:40px"
-  >Descubra mais sobre a 2º Guerra Mundial</v-container>
+  ><img width="40px" src="../assets/img/star.svg">Saiba mais sobre a 2º Guerra Mundial<img width="40px" src="../assets/img/star.svg">
+  <hr class="linha">
+  </v-container>
   <v-container id="inspire">
     <v-container
         class="pa-2 mb-5"
@@ -17,7 +19,7 @@
             cols="12"
             :sm="card.flex"
           >
-            <v-card>
+            <v-card class="destaques">
               <v-img
                 :alt="card.alt"
                 :src="card.src"
@@ -31,8 +33,9 @@
                 ></v-card-title>
               </v-img>
   
-              <v-card-actions class="black">
+              <v-card-actions class="verde">
               <v-btn
+                class="btn"
                 text
                 color="white"
                 :href="card.href"
@@ -68,5 +71,26 @@ export default {
 </script>
 
 <style>
-
+.btn{
+  background-color: black;
+}
+.btn:hover{
+  background-color: grey;
+}
+.destaques:hover{
+  -webkit-box-shadow: 0px 2px 7px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 7px 5px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 7px 5px rgba(0,0,0,0.75);
+}
+.destaques .v-card__title:hover:hover{
+  color: rgb(116, 184, 8);
+  font-weight: bolder;
+}
+.linha{
+  width: 50%;
+  margin: 0 auto;
+}
+.verde{
+  background-color: rgb(43, 66, 5);
+}
 </style>

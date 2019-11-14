@@ -21,15 +21,15 @@
     </label>
 
     <ul class="menu">
-      <router-link to="/" accesskey="1">ALT+1: Início</router-link>
-      <router-link to="/historia" accesskey="2">ALT+2: História</router-link>
-      <router-link to="/Curiosidades" accesskey="3">ALT+3: Curiosidades</router-link>
-      <router-link to="/about" accesskey="4">ALT+4: Sobre</router-link>
-      <router-link to="/AreaAdm/Login" accesskey="5">ALT+5: Área Administrativa</router-link>
-      <a class="zoom_mais" id="aumentar" title="Aumentar fonte">A+</a>
+      <router-link to="/" accesskey="1"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Início</router-link>
+      <router-link to="/historia" accesskey="2"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">História</router-link>
+      <router-link to="/Curiosidades" accesskey="3"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Curiosidades</router-link>
+      <router-link to="/about" accesskey="4"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Sobre</router-link>
+      <router-link to="/AreaAdm/Login" accesskey="5"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Área Administrativa</router-link> 
+      <!-- <a class="zoom_mais" id="aumentar" title="Aumentar fonte">A+</a>
       <a class="zoom_normal" id="normal" title="Normalizar fonte">A</a>
        <a class="zoom_menos" id="diminuir" title="Diminuir fonte">A-</a>
-       <a class="ico-acessibilidade ico-contraste" id="contraste" title="Contraste">C</a>
+       <a class="ico-acessibilidade ico-contraste" id="contraste" title="Contraste">C</a> --> 
       <label for="chk" class="hide-menu-btn">
         <i class="fas fa-times"></i>
       </label>
@@ -103,7 +103,7 @@
 .show-menu-btn:hover,
 .hide-menu-btn:hover,
 .menu a.router-link-exact-active {
-  color: #FFB74D;
+  color:  rgb(108, 170, 7);
 }
 
 #chk{
@@ -114,7 +114,7 @@
 
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:920px) {
   .show-menu-btn,.hide-menu-btn{
     display: block;
   }

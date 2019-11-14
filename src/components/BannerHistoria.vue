@@ -13,22 +13,19 @@
       @click="show = !show"
     ></v-img>
 
-    <v-card-title class=" negritoTitleCard  white--text justify-center ">
-      <div>História</div>
-    </v-card-title>
 
     <v-card-actions>
-      <div class="ml-2 serif negrito">
+      <div class=" serif negrito">
        Motivos do início da Segunda Guerra Mundial
       </div>
 
-      <div class="flex-grow-1"></div>
+      
 
       <v-btn
         icon
         @click="show = !show"
       > 
-        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+        <v-icon class="black--text">{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
         
       </v-btn>
     </v-card-actions>

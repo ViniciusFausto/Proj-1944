@@ -18,7 +18,7 @@
         class="d-flex">
         <!--O video ta responsivo, mas não sei se funciona pra videos fora do youtube-->
             <div class="iframe-container">
-              <video controls src="../assets/video.mp4" width="800px" height="500px"></video>
+              <video controls src="../assets/video.mp4" width="800px" height="400px"></video>
             </div>  
         </v-col>
       </v-row>

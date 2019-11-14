@@ -28,7 +28,7 @@
   
               
     <v-card-text
-      class="black--text serif fonte"
+      class="black--text box serif fonte"
        v-text="card.texto" >
     </v-card-text>
                     </v-card>
@@ -65,5 +65,8 @@ export default {
 }
 .fonte{
   font-size: 17px;
+}
+.box{
+  text-align: justify;
 }
 </style>

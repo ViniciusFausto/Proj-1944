@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-12">
+  <v-container class="mt-12 mb-12">
     <h1 class="text-center">Formulário de Usuário</h1>
       <form class="mt-5">
         <v-text-field

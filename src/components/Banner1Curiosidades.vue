@@ -2,7 +2,7 @@
   <div id="app" >
   <v-container id="inspire">
     <v-container
-        class="pa-2"
+        class="pa-2 "
         fluid
       >
         <v-row>
@@ -11,20 +11,26 @@
             :key="card.title"
             cols="12"
             :sm="card.flex"
-            class="my-2"
-                >
+            
+          >
+      <v-card class="destaquesCuri">
       <router-link :to="{path: card.to}">
       <v-img
       :alt="cards.alt" 
       :src="card.src"
       height="250px"
       @click="show = !show"
-    ></v-img>
+    >
+    <v-card-title
+      class="fill-height align-end caixa "
+      v-text="card.title"
+    ></v-card-title>
+    </v-img>
     </router-link>
-
-    <v-card-title class=" white--text negritoTitleCard justify-center  semSerif">
+<!-- 
+    <v-card-title class=" white--text negritoTitleCard justify-center caixa  semSerif">
       <div>{{card.title}}</div>
-    </v-card-title>
+    </v-card-title> -->
 
     
     <v-card-actions class="back justify-center">
@@ -43,6 +49,7 @@
         
       </v-btn>
     </v-card-actions>
+    </v-card>
 
     <v-expand-transition>
       <div v-show="show">
@@ -93,11 +100,21 @@ export default {
 .back{
   background-color:  rgb(0, 0, 0);
 }
-.negritoTitleCard{
-  font-weight: bolder;
-  font-size: 35px;
-  height: 70px;
-  background-color:  rgb(65, 41, 5);
+.caixa{
+  text-decoration: none;
+ color: white;
+}
+.v-application a {
+   text-decoration: none;
+}
+.destaquesCuri:hover{
   
+  -webkit-box-shadow: 0px 2px 7px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 7px 5px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 7px 5px rgba(0,0,0,0.75);
+}
+.destaquesCuri .v-card__title:hover:hover{
+  color: rgb(194, 104, 2);
+  font-weight: bolder;
 }
 </style>

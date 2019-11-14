@@ -13,7 +13,7 @@
             :sm="card.flex"
             class="my-2"
                 >
- 
+      <v-card class="cordeFundo">
       <v-img
       :src="card.src"
       height="400px"
@@ -21,13 +21,13 @@
     ></v-img>
 
 
-    <v-card-title style="height:60px"  class="black semSerif white--text align-self-center justify-center display-1">
+    <v-card-title style="height:60px"  class="titulofilmes semSerif  align-self-center justify-center display-1">
       <div>{{card.title}}</div>
     </v-card-title>
 
     
-    <v-card-actions>
-      <div class="ml-2 negrito semSerif">
+    <v-card-actions class=" justify-center">
+      <div class="ml-2 negrito semSerif text--center">
         {{card.text}}
       </div>
 
@@ -42,7 +42,8 @@
         
       </v-btn>
     </v-card-actions>
-
+    </v-card>
+    
     <v-expand-transition>
       <div v-show="show">
         <v-card-text class="fonte serif">
@@ -89,5 +90,14 @@ export default {
 .fonte{
   font-size: 17px;
 }
-
+.cordeFundo:hover{
+  
+  -webkit-box-shadow: 0px 2px 7px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 7px 5px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 7px 5px rgba(0,0,0,0.75);
+}
+.titulofilmes{
+  color:white;
+  background-color:rgb(4, 4, 49);
+}
 </style>
