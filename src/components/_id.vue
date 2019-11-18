@@ -31,7 +31,7 @@
         ></v-text-field>
           </v-col>
             <v-col>
-            <v-select
+            <v-estado
               v-model="estado"
               :items="estados"
               :error-messages="estadoErrors"
@@ -39,7 +39,7 @@
               required
               @change="$v.estado.$touch()"
               @blur="$v.estado.$touch()"
-            ></v-select>
+            ></v-estado>
           </v-col>
         </v-row>
         <v-checkbox
@@ -105,6 +105,7 @@
         'Tocantins (TO)',
       ],
       checkbox: false,
+
     }),
     
     computed: {
@@ -135,33 +136,9 @@
         return errors
       }
     },
-
+         id: this.$route.params.id,
     methods: {
-      submit () {
-        this.$v.$touch()
-      },
-      submit (){
-        const dados = {
-          nome: this.nome,
-          estado: this.estado,
-          email: this.email,
-          cidade: this.cidade,
-        }
-      let usuarios = this.$ls.get('usuarios')
-      if (usuarios) {
-        dados.id = usuarios.length + 1
-        usuarios.push(dados)
-      } else {
-        dados.id = 1
-        usuarios = [ dados ]
-      }
-      this.$ls.set('usuarios', usuarios)
-
-      this.$router.push('../AreaAdm/UsuarioAdm')
-      },
-      
-      
-      clear () {
+    clear () {
         this.$v.$reset()
         this.nome = ''
         this.email = ''
@@ -170,6 +147,20 @@
         this.checkbox = false
       },
     },
+    created () {
+    const usuarios = this.$ls.get('usuarios')
+    
+    if (usuarios) {
+      const item = usuarios.find(u => u.id == this.id)
+      
+      if (item) {
+        this.nome = item.nome
+        this.email = item.email
+        this.cidade = item.cidade
+        this.estado = item.estado
+      }
+    }
   }
- 
+}
+  
 </script>

@@ -1,8 +1,10 @@
 <template>
-  <v-data-table
+  <v-data-table 
     :headers="headers"
-    :items="desserts"
-    sort-by="telefone"
+    :items="usuarios"
+    sort-by="nome"
+    hide-default-footer
+    items-per-page="15"
     class="elevation-1 my-6"
   >
     <template v-slot:top>
@@ -52,33 +54,22 @@
           sortable: false,
           value: 'nome',
         },
-        { text: 'Telefone', value: 'telefone' },
         { text: 'Email', value: 'email' },
         { text: 'Cidade', value: 'cidade' },
         { text: 'Estado', value: 'estado' },
         { text: 'Ações', value: 'action', sortable: false },
       ],
-      desserts: [],
-      editedIndex: -1,
-      editedItem: {
-        nome: '',
-        telefone: '0',
-        email: '',
-        cidade: '',
-        estado: '',
-      },
-      defaultItem: {
-        nome: '',
-        telefone: '0,00',
-        email: '',
-        cidade: '',
-        estado: '',
-      },
+      usuarios: [],
     }),
+     created () {
+      const usuarios = this.$ls.get('usuarios')
+    if (usuarios) this.usuarios = usuarios
+  },
+
 
     computed: {
       formTitle () {
-        return this.editedIndex === -1 ? 'Novo Produto' : 'Editar Produto'
+        return this.editedIndex === -1 ? 'Novo Usuario' : 'Editar Usuario'
       },
     },
 
@@ -87,103 +78,28 @@
         val || this.close()
       },
     },
-
-    created () {
-      this.initialize()
-    },
-
+     
     methods: {
-      initialize () {
-        this.desserts = [
-          {
-            nome: 'Daphne',
-            telefone: '997065280',
-            email: 'vinicius@gmail.com',
-            cidade: 'Araraquara',
-            estado: 'São Paulo',
-          },
-          {
-            nome: 'Daphne',
-            telefone: '997065280',
-            email: 'vinicius@gmail.com',
-            cidade: 'Araraquara',
-            estado: 'São Paulo',
-          },
-          {
-            nome: 'Daphne',
-            telefone: '997065280',
-            email: 'vinicius@gmail.com',
-            cidade: 'Araraquara',
-            estado: 'São Paulo',
-          },
-          {
-            nome: 'Daphne',
-            telefone: '997065280',
-            email: 'vinicius@gmail.com',
-            cidade: 'Araraquara',
-            estado: 'São Paulo',
-          },
-          {
-            nome: 'Daphne',
-            telefone: '997065280',
-            email: 'vinicius@gmail.com',
-            cidade: 'Araraquara',
-            estado: 'São Paulo',
-          },
-          {
-            nome: 'Daphne',
-            telefone: '997065280',
-            email: 'vinicius@gmail.com',
-            cidade: 'Araraquara',
-            estado: 'São Paulo',
-          },
-          {
-            nome: 'Daphne',
-            telefone: '997065280',
-            email: 'vinicius@gmail.com',
-            cidade: 'Araraquara',
-            estado: 'São Paulo',
-          },
-          {
-            nome: 'Daphne',
-            telefone: '997065280',
-            email: 'vinicius@gmail.com',
-            cidade: 'Araraquara',
-            estado: 'São Paulo',
-          },
-        ]
-      },
-
       editItem (item) {
-        this.editedIndex = this.desserts.indexOf(item)
-        this.editedItem = Object.assign({}, item)
-        this.dialog = true
+        this.$router.push('../AreaAdm/FormularioEdi')
       },
 
       deleteItem (item) {
-        const index = this.desserts.indexOf(item)
-        confirm('Deseja mesmo Deletar esse Usuario?') && this.desserts.splice(index, 1)
+        let usuarios = this.$ls.get('usuarios')
+        usuarios = usuarios.filter(u => u.id != item.id)
+        this.$ls.set('usuarios', usuarios)
+        const index = this.usuarios.indexOf(item)
+        confirm('Deseja mesmo Deletar esse Usuario?') && this.usuarios.splice(index, 1)
       },
 
       close () {
-        this.dialog = false
-        setTimeout(() => {
-          this.editedItem = Object.assign({}, this.defaultItem)
-          this.editedIndex = -1
-        }, 300)
-      },
-
-      save () {
-        if (this.editedIndex > -1) {
-          Object.assign(this.desserts[this.editedIndex], this.editedItem)
-        } else {
-          this.desserts.push(this.editedItem)
-        }
-        this.close()
+        this.dialog = false 
       },
     },
   }
 </script>
 <style>
-
+.v-application a {
+  text-decoration: none;
+}
 </style>

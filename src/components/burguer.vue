@@ -21,13 +21,13 @@
     </label>
 
     <ul class="menu">
-      <router-link to="/" accesskey="1"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Início</router-link>
-      <router-link to="/historia" accesskey="2"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">História</router-link>
-      <router-link to="/Curiosidades" accesskey="3"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Curiosidades</router-link>
-      <router-link to="/about" accesskey="4"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Sobre</router-link>
-      <router-link to="/AreaAdm/Login" accesskey="5"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Área Administrativa</router-link> 
-      <!-- <a class="zoom_mais" id="aumentar" title="Aumentar fonte">A+</a>
-      <a class="zoom_normal" id="normal" title="Normalizar fonte">A</a>
+      <router-link to="/" accesskey="1" title="ALT + 1"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Início</router-link>
+      <router-link to="/historia" accesskey="2" title="ALT + 2"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">História</router-link>
+      <router-link to="/Curiosidades" accesskey="3" title="ALT + 3"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Curiosidades</router-link>
+      <router-link to="/about" accesskey="4" title="ALT + 4"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Sobre</router-link>
+      <router-link to="/AreaAdm/Login" accesskey="5" title="ALT + 5"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Área Administrativa</router-link> 
+      <!-- <a class="zoom_mais" id="aumentar" title="Aumentar fonte">A+</a> -->
+      <!--<a class="zoom_normal" id="normal" title="Normalizar fonte">A</a>
        <a class="zoom_menos" id="diminuir" title="Diminuir fonte">A-</a>
        <a class="ico-acessibilidade ico-contraste" id="contraste" title="Contraste">C</a> --> 
       <label for="chk" class="hide-menu-btn">
@@ -43,15 +43,17 @@
 
 </template>
 <script>
-    // var body = document.getElementsByTagName('body')
-    // var aumentar = document.getElementById('aumentar')
-    // var diminuir = document.getElementById('diminuir')
-    // var normal = document.getElementById('normal')
-    // var  contraste = document.getElementById('contraste')
+    var body = document.getElementsByTagName('body')
+    const aumentar = document.getElementById('aumentar')
+    var diminuir = document.getElementById('diminuir')
+    var normal = document.getElementById('normal')
+    var contraste = document.getElementById('contraste')
 
-    // aumentar.addEventListener('click',function(){
-    //   console.log('clicou aumentar')
-    // })
+    
+    // aumentar.onclick = () => {
+    //    console.log('a')
+    //  }
+    // console.log(aumentar)
 </script>
 
 <style>

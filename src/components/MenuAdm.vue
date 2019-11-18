@@ -89,13 +89,17 @@ export default {
 .show-menu-btn:hover,
 .hide-menu-btn:hover,
 .menu a.router-link-exact-active {
-  color: #FFB74D;
+    color:  rgb(108, 170, 7);
+    text-decoration: none;
 }
 
 #chk{
   position: absolute;
   visibility: hidden;
   z-index: -1111;
+}
+a.router-link-exact-active{
+  text-decoration: none;
 }
 
 

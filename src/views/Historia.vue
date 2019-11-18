@@ -17,6 +17,16 @@ export default {
       components: {
    Menu,SubImgHist,paralaxe,
   },
+  metaInfo: {
+    title: "1944 - História",
+    content:"width=device-width,initial-scale=1.0",
+    name:'viewport',
+    charset: "utf-8",
+    author:"Vinicius, Jaime, joão, Vitor",
+    meta: [
+      { name: "Página História", content: "Página com conteúdos sobre a segunda guerra mundial" },
+    ]
+  }
 }
 </script>
 

@@ -7,6 +7,12 @@
   ><img width="40px" src="../assets/img/star.svg">Saiba mais sobre a 2º Guerra Mundial<img width="40px" src="../assets/img/star.svg">
   <hr class="linha">
   </v-container>
+  <v-container
+    fluid
+    class="text-center font-weight-bold"
+    style="font-size:20px"
+  >Conheça nossos principais conteúdos abaixo
+  </v-container>
   <v-container id="inspire">
     <v-container
         class="pa-2 mb-5"

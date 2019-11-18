@@ -21,7 +21,7 @@
               >
                 <v-toolbar-title>Login</v-toolbar-title>
                 <div class="flex-grow-1"></div>
-                <router-link to="/">
+                <router-link to="/" accesskey="1" title="ALT + 1">
                 <v-tooltip bottom>
                   <template v-slot:activator="{ on }">
                     <v-btn
@@ -100,3 +100,8 @@
   }
   }
 </script>
+<style>
+.v-application a{
+  text-decoration: none;
+}
+</style>

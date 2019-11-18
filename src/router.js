@@ -37,6 +37,11 @@ export default new Router({
       component: () => import('./views/Filmes.vue')
     },
     {
+      path: '/AreaAdm/FormularioEdi',
+      name:'FormularioEdi',
+      component: () => import('./views/AreaAdm/FormularioEdi.vue')
+    },
+    {
       path:'/AreaAdm/Login',
       name:'painel-login',
       component: () => import('./views/AreaAdm/Login.vue')
@@ -96,10 +101,6 @@ export default new Router({
       name:'Curiosidades',
       component: () => import('./views/Curiosidades.vue')
     },
-    {
-      path:'/Catalogos',
-      name:'Catálogos',
-      component: () => import('./views/Catalogos.vue')
-    }
+    
   ]
 })
