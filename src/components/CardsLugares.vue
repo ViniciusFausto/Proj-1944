@@ -35,16 +35,16 @@
 
       <v-btn
         icon
-        @click="show = !show"
+        @click="card.show = !card.show"
 
       > 
-        <v-icon class="white--text">{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+        <v-icon class="white--text">{{ card.show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
         
       </v-btn>
     </v-card-actions>
  </v-card>
     <v-expand-transition>
-      <div v-show="show">
+      <div v-show="card.show">
         <v-card-text class="fonte serif">
          {{card.subtext}}
         </v-card-text>
@@ -62,16 +62,16 @@
 export default {
     data: () => ({
     cards: [
-      { title: 'Hiroshima', src: require('../assets/IMG LUGARES/2.png'), 
+      { show: false,title: 'Hiroshima', src: require('../assets/IMG LUGARES/2.png'), 
       text:'Hiroshima, Japão',subtext:"Atingida por uma bomba atômica em 6 de agosto de 1945.Foto da esquerda: 1945 Foto da direita: 2016", flex: 12, },
-      { title: 'Dresden', src: require('../assets/IMG LUGARES/4.png'),
+      { show: false,title: 'Dresden', src: require('../assets/IMG LUGARES/4.png'),
       text:'Dresden (Alemanha)',subtext:"Alvo de ataques aéreos dos Aliados entre 13 e 15 de 1945. Foto da esquerda: 1945 Foto da direita: 2011", flex: 12, },
-      { title: 'Hamburgo', src: require('../assets/IMG LUGARES/antesDepois.png'),
+      { show: false,title: 'Hamburgo', src: require('../assets/IMG LUGARES/antesDepois.png'),
       text:'Hamburgo (Alemanha)',subtext:"Alvo de grandes bombardeios dos aliados.Foto da esquerda: 1943 Foto da direita: 2013", flex: 12 },
-      { title: 'Nagasaki', src: require('../assets/IMG LUGARES/7.jpg'),
+      {show: false, title: 'Nagasaki', src: require('../assets/IMG LUGARES/7.jpg'),
       text:'Nagasaki (Alemanha)',subtext:"Alvo de um ataque de bomba atômica durante a guerra.Foto da esquerda: 1945 foto da direita: 2012", flex: 12, },
     ],
-     show: false,
+     
   }),
 }
 </script>

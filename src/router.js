@@ -37,7 +37,7 @@ export default new Router({
       component: () => import('./views/Filmes.vue')
     },
     {
-      path: '/AreaAdm/FormularioEdi',
+      path: '/AreaAdm/FormularioEdi/:id',
       name:'FormularioEdi',
       component: () => import('./views/AreaAdm/FormularioEdi.vue')
     },

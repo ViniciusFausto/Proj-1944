@@ -68,7 +68,7 @@ export default {
       { title: 'A Cobra vai fumar', src: require('../assets/CARDS MENORES/brasil.jpg'),
       href:'/Curiosidades', flex: 4,alt:'exercito brasileiro' },
       { title: 'Curiosidades', src: require('../assets/CARDS MAIORES/ovin.png'),
-      href:'/historia', flex: 6,alt:'aeronave alienigena' },
+      href:'/Curiosidades', flex: 6,alt:'aeronave alienigena' },
       { title: 'Governo', src: require('../assets/CARDS MAIORES/governo3.jpg'),
       href:'/historia', flex: 6,alt:'hitler e seus seguidores'  },
     ],

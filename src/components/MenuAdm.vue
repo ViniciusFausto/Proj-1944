@@ -104,7 +104,7 @@ a.router-link-exact-active{
 
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:920px) {
   .show-menu-btn,.hide-menu-btn{
     display: block;
   }

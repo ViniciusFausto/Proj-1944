@@ -41,7 +41,7 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
-                    label="Login"
+                    label="Usuário"
                     name="login"
                     type="text"
                     v-model="login"
@@ -50,7 +50,7 @@
 
                   <v-text-field
                     id="password"
-                    label="Password"
+                    label="Senha"
                     name="password"
                     type="password"
                     v-model="password"

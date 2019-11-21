@@ -35,17 +35,17 @@
 
       <v-btn
         icon
-        @click="show = !show"
+        @click="card.show = !card.show"
 
       > 
-        <v-icon class="black--text">{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+        <v-icon class="black--text">{{ card.show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
         
       </v-btn>
     </v-card-actions>
     </v-card>
     
     <v-expand-transition>
-      <div v-show="show">
+      <div v-show="card.show">
         <v-card-text class="fonte serif">
          {{card.subtext}}
         </v-card-text>
@@ -63,16 +63,16 @@
 export default {
     data: () => ({
     cards: [
-      { title: 'Bastardos Inglórios', src: require('../assets/IMG FILMES/bastardos.png'), 
+      { show: false,title: 'Bastardos Inglórios', src: require('../assets/IMG FILMES/bastardos.png'), 
       text:'Veja Mais:',subtext:"Durante a Segunda Guerra Mundial, na França, um grupo de judeus americanos conhecidos como Bastardos espalha o terror entre o terceiro Reich. Ao mesmo tempo, Shosanna, uma judia que fugiu dos nazistas, planeja vingança quando um evento em seu cinema reunirá os líderes do partido.", flex: 6, },
-      { title: 'Dunkirk', src: require('../assets/IMG FILMES/Dunkirk-banner.png'),
+      { show: false,title: 'Dunkirk', src: require('../assets/IMG FILMES/Dunkirk-banner.png'),
       text:'Veja Mais:',subtext:"Durante a Segunda Guerra Mundial, a Alemanha avança rumo à França e cerca as tropas aliadas nas praias de Dunkirk. Sob cobertura aérea e terrestre das forças britânicas e francesas, as tropas são lentamente evacuadas da praia.", flex: 6, },
-      { title: 'O Menino do Pijama Listrado',subtext:"bbbbbbbbbbbbbbbbbbbb", src: require('../assets/IMG FILMES/o-menino-do-pijama-listrado1.png'),
+      { show: false,title: 'O Menino do Pijama Listrado',subtext:"bbbbbbbbbbbbbbbbbbbb", src: require('../assets/IMG FILMES/o-menino-do-pijama-listrado1.png'),
       text:'Veja Mais:',subtext:"Durante a Segunda Guerra Mundial, Bruno, um garoto de oito anos, e sua família saem de Berlim para residir próximo a um campo de concentração, onde seu pai acaba de se tornar comandante. Infeliz e solitário, ele vagueia fora de sua casa e certo dia encontra Shmuel, um menino judeu de sua idade. Embora a cerca de arame farpado do campo os separem, os meninos começam uma amizade proibida.", flex: 6 },
-      { title: 'Resgate do soldado Ryan', src: require('../assets/IMG FILMES/resgate.png'),
+      { show: false,title: 'Resgate do soldado Ryan', src: require('../assets/IMG FILMES/resgate.png'),
       text:'Veja Mais:',subtext:"Ao desembarcar na Normandia, no dia 6 de junho de 1944, o Capitão Miller recebe a missão de comandar um grupo do Segundo Batalhão para o resgate do soldado James Ryan, o caçula de quatro irmãos, dentre os quais três morreram em combate. Por ordens do chefe George C. Marshall, eles precisam procurar o soldado e garantir o seu retorno, com vida, para casa.", flex: 6, },
     ],
-     show: false,
+     
   }),
 }
 </script>

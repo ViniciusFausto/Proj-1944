@@ -23,23 +23,7 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-container>
-      <v-row>
-        <v-col 
-        cols="12">
-          <h2 align="center">_Nosso grupo_</h2>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col cols="12" class="row d-flex flex-column flex-md-row align-center justify-space-around">
-          <!--Pensei em colocar aqui fotos nossas, do grupo-->
-          <img width="14%" src="../assets/img/usuario.png" alt="">
-          <img width="14%" src="../assets/img/usuario.png" alt="">
-          <img width="14%" src="../assets/img/usuario.png" alt="">
-          <img width="14%" src="../assets/img/usuario.png" alt="">
-      </v-col>
-      </v-row>
-    </v-container>
+   
   </div>
 </template>
 
