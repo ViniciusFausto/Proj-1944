@@ -87,11 +87,6 @@ export default new Router({
       component: () => import('./views/AreaAdm/FilmeAdm.vue')
     },
     {
-      path:'/AreaAdm/CuriAdm',
-      name:'painel-curi',
-      component: () => import('./views/AreaAdm/CuriAdm.vue')
-    },
-    {
       path:'/AreaAdm/HistoriaAdm',
       name:'painel-historia',
       component: () => import('./views/AreaAdm/HistoriaAdm.vue')

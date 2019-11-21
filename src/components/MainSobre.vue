@@ -49,7 +49,7 @@ export default {
   padding-bottom: 56.25%; 
   height: 0;
 }
-.iframe-container iframe{
+.iframe-container video{
   position: absolute;
   top:0;
   left: 0;
