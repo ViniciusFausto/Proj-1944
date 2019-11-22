@@ -27,18 +27,11 @@
     ></v-card-title>
     </v-img>
     </router-link>
-<!-- 
-    <v-card-title class=" white--text negritoTitleCard justify-center caixa  semSerif">
-      <div>{{card.title}}</div>
-    </v-card-title> -->
-
     
     <v-card-actions class="back justify-center">
       <div class="ml-2 white--text  negrito semSerif ">
         {{card.text}}
       </div>
-
-      <!-- <div class="flex-grow-1"></div> -->
 
       <v-btn
         icon

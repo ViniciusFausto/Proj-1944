@@ -69,12 +69,18 @@ export default {
 }
 @media(max-width: 700px){
   .tituloCuri{
-    font-size: 70px!important;
+    font-size: 70px;
   }
+  .fonttitulo{
+  font-size: 20px;
+}
 }
 @media(max-width: 500px){
   .tituloCuri{
-    font-size: 50px!important;
+    font-size: 50px;
   }
+  .fonttitulo{
+  font-size: 15px;
+}
 }
 </style>

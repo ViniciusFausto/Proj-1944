@@ -31,8 +31,6 @@
         {{card.text}}
       </div>
 
-      <!-- <div class="flex-grow-1"></div> -->
-
       <v-btn
         icon
         @click="card.show = !card.show"

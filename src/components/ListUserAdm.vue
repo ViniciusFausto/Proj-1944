@@ -4,7 +4,7 @@
     :items="usuarios"
     sort-by="nome"
     hide-default-footer
-    items-per-page="15"
+    
     class="elevation-1 my-6"
   >
     <template v-slot:top>
@@ -24,13 +24,6 @@
       </v-toolbar>
     </template>
     <template v-slot:item.action="{ item }">
-      <v-icon
-        small
-        class="mr-2"
-        @click="editItem(item)"
-      >
-        mdi-pencil
-      </v-icon>
       <v-icon
         small
         @click="deleteItem(item)"

@@ -1,7 +1,7 @@
 <template>
   
   <div class="footer">
- <span>Year Fourty-Four</span> — {{ new Date().getFullYear() }} — <strong>Todos os direitos reservados</strong>
+  {{ new Date().getFullYear() }} — <strong>Todos os direitos reservados</strong>
 </div>
   
 </template>

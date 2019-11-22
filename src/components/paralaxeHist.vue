@@ -20,9 +20,6 @@
       <div class="ml-2 fonttitulo semSerif negrito">
           O começo...
       </div>
-
-      <!-- <div class="flex-grow-1"></div> -->
-
       <v-btn
         icon
         @click="show = !show"
