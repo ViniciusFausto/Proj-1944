@@ -3,6 +3,8 @@
   <v-parallax
     dark
     :src="require('../assets/img/nazi2.jpg')"
+    alt='Foto do tanque gigante feito pelos nazista'
+    title="Tanque gigante"
     class="paralaxe"
     
   >

@@ -21,11 +21,11 @@
     </label>
 
     <ul class="menu">
-      <router-link to="/" accesskey="1" title="ALT + 1"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Início</router-link>
-      <router-link to="/historia" accesskey="2" title="ALT + 2"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">História</router-link>
-      <router-link to="/Curiosidades" accesskey="3" title="ALT + 3"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Curiosidades</router-link>
-      <router-link to="/about" accesskey="4" title="ALT + 4"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Sobre</router-link>
-      <router-link to="/AreaAdm/Login" accesskey="5" title="ALT + 5"><img class="tanque" width="20vh" src="../assets/img/tanque.svg">Área Administrativa</router-link> 
+      <router-link to="/" accesskey="1" title="ALT + 1">Início</router-link>
+      <router-link to="/historia" accesskey="2" title="ALT + 2">História</router-link>
+      <router-link to="/Curiosidades" accesskey="3" title="ALT + 3">Curiosidades</router-link>
+      <router-link to="/about" accesskey="4" title="ALT + 4">Sobre</router-link>
+      <router-link to="/AreaAdm/Login" accesskey="5" title="ALT + 5">Área Administrativa</router-link> 
       <!-- <a class="zoom_mais" id="aumentar" title="Aumentar fonte">A+</a> -->
       <!--<a class="zoom_normal" id="normal" title="Normalizar fonte">A</a>
        <a class="zoom_menos" id="diminuir" title="Diminuir fonte">A-</a>

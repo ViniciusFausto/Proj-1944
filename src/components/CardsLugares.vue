@@ -15,6 +15,7 @@
                 >
    <v-card class="cordeFundoL">
       <v-img
+      :alt="card.alt"
       :src="card.src"
       height="400px"
       @click="show = !show"
@@ -60,14 +61,14 @@
 export default {
     data: () => ({
     cards: [
-      { show: false,title: 'Hiroshima', src: require('../assets/IMG LUGARES/2.png'), 
+      {alt:'Foto ilustrativa de Hiroshima pós guerra', show: false,title: 'Hiroshima', src: require('../assets/IMG LUGARES/2.png'), 
       text:'Hiroshima, Japão',subtext:"Atingida por uma bomba atômica em 6 de agosto de 1945.Foto da esquerda: 1945 Foto da direita: 2016", flex: 12, },
-      { show: false,title: 'Dresden', src: require('../assets/IMG LUGARES/4.png'),
+      {alt:'Foto ilustrativa de Dresden pós guerra', show: false,title: 'Dresden', src: require('../assets/IMG LUGARES/4.png'),
       text:'Dresden (Alemanha)',subtext:"Alvo de ataques aéreos dos Aliados entre 13 e 15 de 1945. Foto da esquerda: 1945 Foto da direita: 2011", flex: 12, },
-      { show: false,title: 'Hamburgo', src: require('../assets/IMG LUGARES/antesDepois.png'),
+      {alt:'Foto ilustrativa de Hamburgo pós guerra', show: false,title: 'Hamburgo', src: require('../assets/IMG LUGARES/antesDepois.png'),
       text:'Hamburgo (Alemanha)',subtext:"Alvo de grandes bombardeios dos aliados.Foto da esquerda: 1943 Foto da direita: 2013", flex: 12 },
-      {show: false, title: 'Nagasaki', src: require('../assets/IMG LUGARES/7.jpg'),
-      text:'Nagasaki (Alemanha)',subtext:"Alvo de um ataque de bomba atômica durante a guerra.Foto da esquerda: 1945 foto da direita: 2012", flex: 12, },
+      {alt:'Foto ilustrativa de Nagasaki pós guerra',show: false, title: 'Nagasaki', src: require('../assets/IMG LUGARES/7.jpg'),
+      text:'Nagasaki (Japão)',subtext:"Alvo de um ataque de bomba atômica durante a guerra.Foto da esquerda: 1945 foto da direita: 2012", flex: 12, },
     ],
      
   }),

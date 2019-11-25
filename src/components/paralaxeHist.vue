@@ -3,6 +3,8 @@
   <v-parallax
     dark
     :src="require('../assets/img/1.jpg')"
+    alt='Foto de documentos da época da segunda guerra mundial'
+    title="Documentos da época"
     class="paralaxe"
   >
     <v-row

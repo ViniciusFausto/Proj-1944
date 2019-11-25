@@ -18,19 +18,19 @@
         items: [
           {
             src: require('../assets/IMG CARROSSEL/antesDepois.png'),
-            href:'/lugares', alt:'Lugar destruido pela guerra'
+            href:'/lugares', alt:'Lugar destruido pela guerra', title:'Lugar destruido pela guerra',
           },
           {
             src: require('../assets/IMG CARROSSEL/dunkirk.jpg'),
-            href:'/filmes', alt:'Filme sobre a segunda guerra'
+            href:'/filmes', alt:'Filme sobre a segunda guerra',title:'Filme sobre a segunda guerra',
           },
           {
             src: require('../assets/IMG CARROSSEL/nave3.jpg'),
-            href:'/Curiosidades', alt: 'aeronave da época'
+            href:'/Curiosidades', alt: 'aeronave da época',title:'aeronave da época',
           },
           {
             src: require('../assets/IMG CARROSSEL/slide4.png'),
-            href:'/historia', alt: 'Hitler'
+            href:'/historia', alt: 'Hitler olhar 43',title:'Hitler olhar 43',
           },
         ],
       }
